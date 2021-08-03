@@ -1,0 +1,41 @@
+/* общие стили всех страничек */
+body{
+    background-color: #e5e5e5;
+}
+.pages{
+    font-family: Roboto;
+    max-width: 1600px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 0 auto;
+}
+/* стили для шапки */
+/* стили для подвала */
+/* стили только для главной странички */
+/* общие стили главной странички */
+/* основная секция с кнопкой */
+.main--idea{
+    font-size: 44px;
+    font-style: Black;
+    text-align: center;
+    max-width: 696px;
+    line-height: 60px;
+    line-height: 116%;
+    vertical-align: top;
+    letter-spacing: 6%;
+}
+/* секция преимуществ */
+.main--we ul{
+    display: flex;
+}
+/* секция фотографий*/
+.main--photo ul{
+    display: flex;
+}
+/* секция портретов */
+.portret{
+    display: flex;
+}
+.portret>li{
+    max-width: 270px;
+}
+/* стили только для портфолио */
