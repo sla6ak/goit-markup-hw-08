@@ -23,6 +23,7 @@ body{
 /* общие стили текста на всех страничках */
 .pages{
     max-width: 1600px;
+    min-width: 1200px;
     font-family: Roboto;
     font-style: normal;
     background-color: var(--fon-color);
