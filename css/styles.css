@@ -1,14 +1,22 @@
 /* общие стили всех страничек */
+html{
+    box-sizing: border-box;
+}
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 section{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.contents{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* все цвета на всех страничках */
 body{
@@ -23,7 +31,7 @@ body{
 /* общие стили текста на всех страничках */
 .pages{
     max-width: 1600px;
-    min-width: 1200px;
+    min-width: 1250px;
     font-family: Roboto;
     font-style: normal;
     background-color: var(--fon-color);
@@ -48,14 +56,22 @@ li{
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .header--nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 50%;
+}
+.header--nav--pages{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.header--address{
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
 }
 .logo{
     font-family: Raleway;
@@ -81,12 +97,6 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.footer--content{
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
 .footer--address{
     display: flex;
@@ -155,7 +165,6 @@ li{
 }
 .main--we ul{
     display: flex;
-    max-width: 1200px;
 }
 .main--we li{
     width: 270px;
@@ -168,7 +177,6 @@ li{
 }
 .main--photo ul{
     display: flex;
-    max-width: 1200px;
     
 }
 /* секция портретов */
@@ -179,8 +187,6 @@ li{
 }
 .portret{
     display: flex;
-    max-width: 1200px;
-    justify-content: space-between;
     
 }
 .portret>li{
@@ -195,9 +201,6 @@ li{
 .portfolio--works{
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     
 }
 .portfolio--works li{

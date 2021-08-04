@@ -12,35 +12,34 @@
 </head>
 <body>
     <div class="pages">
-        <header class="header">
-            <nav class="header--nav">
-                <!-- этот логотип навигационная ссылка -->
-                <a href="#" id="link-header" class="logo"><span>Web</span>Studio</a>
-                <ul>
-                    <li>
-                        <a href="#">Студия</a>
-                    </li>
-                    <li>
-                        <a  href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li>
-                        <!-- это переход в меню адресов и контактов -->
-                        <a href="#">Контакты</a>
-                    </li>
-                    
+        <header class="header contents">
+                <nav class="header--nav">
+                    <!-- этот логотип навигационная ссылка -->
+                    <a href="#" id="link-header" class="logo"><span>Web</span>Studio</a>
+                    <ul class="header--nav--pages">
+                        <li>
+                            <a href="#">Студия</a>
+                        </li>
+                        <li>
+                            <a  href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <ul class="header--address">
+                    <li><a href="info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <div>
-                <a href="info@devstudio.com">info@devstudio.com</a>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-            </div>
         </header>
         <main class="main">
-            <section class="main--one">
+            <section class="main--one contents">
                 <h1 class="main--idea">Эффективные решения<br>для вашего бизнеса</h1>
                 <button class="main--one__button" type="button">Заказать услугу</button>
             </section>
-            <section class="main--we">
+            <section class="main--we contents">
                 <!-- симантический подзоголовок как говорил Саша Репета -->
                 <h2>Особенности</h2>
                 <!-- чесноговоря я бы не делал тут список для трех фотографий они и так упорядочатся внутри флексбокса. лишний раз бороться с кругляшками возле фотографий. -->
@@ -63,7 +62,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="main--photo">
+            <section class="main--photo contents">
                 <h2>Чем мы занимаемся</h2>
                 <ul> 
                     <li><img src="./images/1.1.jpg" width="370" height="294" alt="Пишем програмный код"></li>
@@ -73,42 +72,40 @@
             </section>
             <section class="main--portret">
                 <h2>Наша команда</h2>
-                <ul class="portret">
+                <ul class="portret contents">
                     <li>
                         <img src="./images/2.1.jpg" width="270" height="260" alt="Фотопортрет мужчины">
-                        <p>Игорь Демьяненко<br>
-                            <span>Product Designer</span>
-                        </p>
+                        <h3>Игорь Демьяненко</h3>
+                        <p>Product Designer</p>
                     </li>
                     <li>
                         <img src="./images/2.2.jpg" width="270" height="260" alt="Фотопортрет женчины">
-                        <p>Ольга Репина<br>
-                            <span>Frontend Developer</span>
-                        </p>
+                        <h3>Ольга Репина</h3>
+                        <p>Frontend Developer</p>
                     </li>
                     <li>
                         <img src="./images/2.3.jpg" width="270" height="260" alt="Фотопортрет мужчины">
-                        <p>Николай Тарасов<br>
-                            <span>Marketing</span>
-                        </p>
+                        <h3>Николай Тарасов</h3>
+                        <p>Marketing</p>
                     </li>
                     <li>
                         <img src="./images/2.4.jpg" width="270" height="260" alt="Фотопортрет мужчины">
-                        <p>Михаил Ермаков<br>
-                            <span>UI Designer</span>
-                        </p>
+                        <h3>Михаил Ермаков</h3>
+                        <p>UI Designer</p>
                     </li>
                 </ul>
             </section>
         </main>
         <footer class="footer">
-            <div class="footer--content">
+            <div class="contents">
             <!-- это логотип сайта он ведет на начало главной страницы -->
                 <a href="#link-header" class="logo"><span>Web</span>Studio</a>
                 <address class="footer--address">
-                    <span>г. Киев, пр-т Леси Украинки, 26</span>
-                    <a href="info@devstudio.com">info@devstudio.com</a>
-                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                    <p>г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul>
+                        <li><a href="info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
                 </address>
             </div>
         </footer>
