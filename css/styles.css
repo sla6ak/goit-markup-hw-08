@@ -1,41 +1,205 @@
 /* общие стили всех страничек */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* все цвета на всех страничках */
 body{
     background-color: #e5e5e5;
 }
+:root{--main-color: #000000;}
+:root{--second-color: #2196F3;}
+:root{--fon-color: #ffffff;}
+:root{--ground-color: #2f303a;}
+:root{--team-color: #f5f4fa;}
+:root{--p-color: #757575;}
+/* общие стили текста на всех страничках */
 .pages{
-    font-family: Roboto;
     max-width: 1600px;
-    background-color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-style: normal;
+    background-color: var(--fon-color);
     margin: 0 auto 0 auto;
 }
-/* стили для шапки */
-/* стили для подвала */
+.main h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 41px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+/* стили для шапки на всех страницах */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header--nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.logo span{
+    color: var(--second-color);
+}
+.header--nav>ul{
+    display: flex;
+}
+.header a{
+    color: var(--main-color);
+}
+/* стили для подвала на всех страницах*/
+.footer{
+    background-color: var(--ground-color);
+    height: 252px;
+    color: var(--fon-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer--content{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.footer--address{
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer a{
+    color: var(--fon-color);
+}
 /* стили только для главной странички */
 /* общие стили главной странички */
 /* основная секция с кнопкой */
+.main--one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--ground-color);
+    height: 600px;
+}
 .main--idea{
+    color: var(--fon-color);
     font-size: 44px;
-    font-style: Black;
+    font-weight: 900;
     text-align: center;
-    max-width: 696px;
+    width: 696px;
+    height: 120px;
     line-height: 60px;
     line-height: 116%;
-    vertical-align: top;
     letter-spacing: 6%;
+    text-transform: uppercase;
+}
+.main--one__button{
+    width: 200px;
+    height: 50px;
+    color: var(--fon-color);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: var(--second-color);
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
 }
 /* секция преимуществ */
+.main--we h2{
+    color: var(--fon-color);
+}
+.main--we h3{
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.main--we p{
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+}
 .main--we ul{
     display: flex;
+    max-width: 1200px;
+}
+.main--we li{
+    width: 270px;
+    height: 101px;
 }
 /* секция фотографий*/
+.main--photo{
+    min-height: 550px;
+    
+}
 .main--photo ul{
     display: flex;
+    max-width: 1200px;
+    
 }
 /* секция портретов */
+.main--portret{
+    background-color: var(--team-color);
+    height: 650px;
+    
+}
 .portret{
     display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    
 }
 .portret>li{
     max-width: 270px;
+    height: 368px;
+    background-color: var(--fon-color);
 }
 /* стили только для портфолио */
+.portfolio--menu{
+    display: flex;
+}
+.portfolio--works{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.portfolio--works li{
+    width: 370px;
+    height: 404px;
+}

@@ -13,9 +13,9 @@
 <body>
     <div class="pages">
         <header class="header">
-            <!-- веб всегда синий а студия то черная то белая зависит от фона обернем в спан. -->
-            <a href="#" id="link-header">Web<span>Studio</span></a>
-            <nav>
+            <nav class="header--nav">
+                <!-- этот логотип навигационная ссылка -->
+                <a href="#" id="link-header" class="logo"><span>Web</span>Studio</a>
                 <ul>
                     <li>
                         <a href="#">Студия</a>
@@ -38,10 +38,11 @@
         <main class="main">
             <section class="main--one">
                 <h1 class="main--idea">Эффективные решения<br>для вашего бизнеса</h1>
-                <button type="button">Заказать услугу</button>
+                <button class="main--one__button" type="button">Заказать услугу</button>
             </section>
             <section class="main--we">
-                <h2>Почему вы хотите с нами сотрудничать</h2>
+                <!-- симантический подзоголовок как говорил Саша Репета -->
+                <h2>Особенности</h2>
                 <!-- чесноговоря я бы не делал тут список для трех фотографий они и так упорядочатся внутри флексбокса. лишний раз бороться с кругляшками возле фотографий. -->
                 <ul>
                     <li>
@@ -75,35 +76,41 @@
                 <ul class="portret">
                     <li>
                         <img src="./images/2.1.jpg" width="270" height="260" alt="Фотопортрет мужчины">
-                        Игорь Демьяненко<br>
-                        <span>Product Designer</span>
+                        <p>Игорь Демьяненко<br>
+                            <span>Product Designer</span>
+                        </p>
                     </li>
                     <li>
                         <img src="./images/2.2.jpg" width="270" height="260" alt="Фотопортрет женчины">
-                        Ольга Репина<br>
-                        <span>Frontend Developer</span>
+                        <p>Ольга Репина<br>
+                            <span>Frontend Developer</span>
+                        </p>
                     </li>
                     <li>
                         <img src="./images/2.3.jpg" width="270" height="260" alt="Фотопортрет мужчины">
-                        Николай Тарасов<br>
-                        <span>Marketing</span>
+                        <p>Николай Тарасов<br>
+                            <span>Marketing</span>
+                        </p>
                     </li>
                     <li>
                         <img src="./images/2.4.jpg" width="270" height="260" alt="Фотопортрет мужчины">
-                        Михаил Ермаков<br>
-                        <span>UI Designer</span>
+                        <p>Михаил Ермаков<br>
+                            <span>UI Designer</span>
+                        </p>
                     </li>
                 </ul>
             </section>
         </main>
         <footer class="footer">
+            <div class="footer--content">
             <!-- это логотип сайта он ведет на начало главной страницы -->
-            <a href="#link-header">Web<span>Studio</span></a>
-            <address class="footer--adress">
-                <span>г. Киев, пр-т Леси Украинки, 26</span>
-                <a href="info@devstudio.com">info@devstudio.com</a>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-            </address>
+                <a href="#link-header" class="logo"><span>Web</span>Studio</a>
+                <address class="footer--address">
+                    <span>г. Киев, пр-т Леси Украинки, 26</span>
+                    <a href="info@devstudio.com">info@devstudio.com</a>
+                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                </address>
+            </div>
         </footer>
     </div>
 </body>

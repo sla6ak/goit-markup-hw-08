@@ -5,20 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <div class="pages">
         <header class="header">
-            <!-- веб всегда синий а студия то черная то белая зависит от фона обернем в спан. -->
-            <a href="./index.html">Web<span>Studio</span></a>
-            <nav>
+            <nav class="header--nav">
+                <!-- веб всегда синий а студия то черная то белая зависит от фона обернем в спан. -->
+                <a href="./index.html" class="logo"><span>Web</span>Studio</a>
                 <ul>
                     <li>
                         <a href="./index.html">Студия</a>
                     </li>
                     <li>
-                        <a id="link-portfolio">Портфолио</a>
+                        <a href="#">Портфолио</a>
                     </li>
                     <li>
                         <!-- это переход в меню адресов и контактов -->
@@ -32,17 +36,65 @@
                 <a href="tel:+380961111111">+38 096 111 11 11</a>
             </div>
         </header>
-        <main>
-
+        <main class="portfolio">
+            <section>
+            <menu class="portfolio--menu">
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+                <li><button type="button"></button></li>
+            </menu>
+                <ul class="portfolio--works">
+                    <li>
+                        <img src="./images/3.1.jpg" alt="Ссылка на сайт портфолио">
+                        <p>Технокряк<span>Веб-сайт</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.2.jpg" alt="Ссылка на сайт баскетбольной команды">
+                        <p>Постер New Orlean vs Golden Star<span>Дизайн</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.3.jpg" alt="Ссылка на сайт с рыбным рестораном">
+                        <p>Ресторан Seafood<span>Приложение</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.4.jpg" alt="Ссылка на сайт с наушниками">
+                        <p>Проэкт Prime<span>Маркетинг</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.5.jpg" alt="Ссылка на сайт с коробками">
+                        <p>Проект Boxes<span>Приложение</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.6.jpg" alt="Ссылка на сайт с монитором">
+                        <p>Inspiration has no Borders<span>Веб-сайт</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.7.jpg" alt="Ссылка на сайт с открытой книгой">
+                        <p><span>Дизайн</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.8.jpg" alt="Ссылка на сайт с биркой">
+                        <p>Проект LAB<span>Маркетинг</span></p>
+                    </li>
+                    <li>
+                        <img src="./images/3.9.jpg" alt="Ссылка на сайт с ноутбуком">
+                        <p>Growing Business<span>Приложение</span></p>
+                    </li>
+                </ul>
+            </section>
         </main>
         <footer class="footer">
-            <!-- это логотип сайта он ведет на начало главной страницы -->
-            <a href="./index.html">Web<span>Studio</span></a>
-            <address class="footer--adress" id="link-adress1">
-                <span>г. Киев, пр-т Леси Украинки, 26</span>
-                <a href="info@devstudio.com">info@devstudio.com</a>
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
-            </address>
+            <div class="footer--content">
+                <!-- это логотип сайта он ведет на начало главной страницы -->
+                <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+                <address class="footer--address">
+                    <span>г. Киев, пр-т Леси Украинки, 26</span>
+                    <a href="info@devstudio.com">info@devstudio.com</a>
+                    <a href="tel:+380961111111">+38 096 111 11 11</a>
+                </address>
+            </div>
         </footer>
     </div>
 </body>
