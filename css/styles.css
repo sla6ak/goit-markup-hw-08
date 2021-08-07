@@ -274,7 +274,7 @@ color: var(--p-color);
     letter-spacing: 0.03em;
     color: var(--streng-black);
 }
-.portfolio--menu button:hover{
+.portfolio--menu button:hover, .portfolio--menu button:focus{
     background-color: var(--second-color);
     color: var(--fon-color);
 }
