@@ -19,6 +19,7 @@ section{
     padding: 0%;
 }
 /* все цвета на всех страничках */
+/* цвет подложки временное решение для глаз - потом удалится */
 body{
     background-color: #e5e5e5;
 }
@@ -70,7 +71,7 @@ li{
 }
 .header--address a{
     font-size: 14px;
-    line-height: 16px;
+    line-height: 171%;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--p-color);
@@ -79,7 +80,7 @@ li{
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 130%;
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
@@ -112,7 +113,7 @@ li{
 }
 .adress--city{
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     font-family: Roboto;
     font-style: normal;
@@ -124,7 +125,7 @@ li{
 .footer--address a{
     color: var(--rgba-color);
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     font-family: Roboto;
     font-style: normal;
@@ -137,7 +138,7 @@ li{
     font-weight: 700;
     font-size: 36px;
     letter-spacing: 0.03em;
-    line-height: 41px;
+    line-height: 130%;
  }
 /* общие стили главной странички */
 /* основная секция с кнопкой */
@@ -156,8 +157,7 @@ li{
     text-align: center;
     width: 696px;
     height: 120px;
-    line-height: 60px;
-    line-height: 116%;
+    line-height: 136%;
     letter-spacing: 6%;
     text-transform: uppercase;
 }
@@ -174,6 +174,7 @@ li{
     border-radius: 4px;
     background-color: var(--second-color);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
+    cursor: pointer;
 }
 /* секция преимуществ */
 
@@ -184,7 +185,7 @@ li{
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -192,7 +193,7 @@ li{
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 171%;
     letter-spacing: 0.03em;
     color: var(--p-color);
 }
@@ -236,14 +237,14 @@ li{
 .portret h3{
 font-weight: 500;
 font-size: 16px;
-line-height: 19px;
+line-height: 200%;
 letter-spacing: 0.03em;
 color: var(--streng-black);
 }
 .portret a{
 font-weight: normal;
 font-size: 16px;
-line-height: 19px;
+line-height: 162%;
 letter-spacing: 0.03em;
 color: var(--p-color);
 }
@@ -270,9 +271,10 @@ color: var(--p-color);
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 162%;
     letter-spacing: 0.03em;
     color: var(--streng-black);
+    cursor: pointer;
 }
 .portfolio--menu button:hover, .portfolio--menu button:focus{
     background-color: var(--second-color);
@@ -315,7 +317,7 @@ color: var(--p-color);
     padding-top: 120px;
     color: var(--streng-black);
     font-size: 18px;
-    line-height: 36px;
+    line-height: 200%;
     letter-spacing: 0.06em;
     font-weight: bold;
     font-family: Roboto;
@@ -324,7 +326,7 @@ color: var(--p-color);
 .text-link span{
     color: var(--p-color);
     font-size: 16px;
-    line-height: 30px;
+    line-height: 187%;
     letter-spacing: 0.03em;
 }
 .portfolio--works span{
