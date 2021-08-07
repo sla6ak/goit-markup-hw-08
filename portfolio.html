@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -12,75 +13,84 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="pages">
+    <div class="pages pages--portfolio">
         <header class="header contents">
                 <nav class="header--nav">
                     <!-- веб всегда синий а студия то черная то белая зависит от фона обернем в спан. -->
                     <a href="./index.html" class="logo"><span>Web</span>Studio</a>
                     <ul class="header--nav--pages">
                         <li>
-                            <a href="./index.html">Студия</a>
+                            <a href="./index.html" class="hover notactive">Студия</a>
                         </li>
                         <li>
-                            <a href="#">Портфолио</a>
+                            <a href="#" class="hover active-alltime">Портфолио</a>
                         </li>
                         <li>
                             <!-- это переход в меню адресов и контактов -->
-                            <a href="#link-adress1">Контакты</a>
+                            <a href="#link-adress1" class="hover notactive">Контакты</a>
                         </li>
             
                     </ul>
                 </nav>
                 <ul class="header--address">
-                    <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a href="mailto:info@devstudio.com" class="hover">info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="hover">+38 096 111 11 11</a></li>
                 </ul>
         </header>
         <main class="portfolio">
             <section class="contents">
                 <menu class="portfolio--menu">
-                    <li><button type="button"></button></li>
-                    <li><button type="button"></button></li>
-                    <li><button type="button"></button></li>
-                    <li><button type="button"></button></li>
-                    <li><button type="button"></button></li>
+                    <li><button type="button" class="filter1"></button></li>
+                    <li><button type="button" class="filter2"></button></li>
+                    <li><button type="button" class="filter3"></button></li>
+                    <li><button type="button" class="filter4"></button></li>
+                    <li><button type="button" class="filter5"></button></li>
                 </menu>
                 <ul class="portfolio--works">
                     <li>
                         <img src="./images/3.1.jpg" alt="Ссылка на сайт портфолио">
-                        <p>Технокряк<span>Веб-сайт</span></p>
+                        <a href="">Технокряк<br><span>Веб-сайт</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.2.jpg" alt="Ссылка на сайт баскетбольной команды">
-                        <p>Постер New Orlean vs Golden Star<span>Дизайн</span></p>
+                        <a href="">Постер New Orlean vs Golden Star<br><span>Дизайн</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.3.jpg" alt="Ссылка на сайт с рыбным рестораном">
-                        <p>Ресторан Seafood<span>Приложение</span></p>
+                        <a href="">Ресторан Seafood<br><span>Приложение</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.4.jpg" alt="Ссылка на сайт с наушниками">
-                        <p>Проэкт Prime<span>Маркетинг</span></p>
+                        <a href="">Проэкт Prime<br><span>Маркетинг</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.5.jpg" alt="Ссылка на сайт с коробками">
-                        <p>Проект Boxes<span>Приложение</span></p>
+                        <a href="">Проект Boxes<br><span>Приложение</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.6.jpg" alt="Ссылка на сайт с монитором">
-                        <p>Inspiration has no Borders<span>Веб-сайт</span></p>
+                        <a href="">Inspiration has no Borders<br><span>Веб-сайт</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.7.jpg" alt="Ссылка на сайт с открытой книгой">
-                        <p><span>Дизайн</span></p>
+                        <a href="">Издание Limited Edition<br><span>Дизайн</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.8.jpg" alt="Ссылка на сайт с биркой">
-                        <p>Проект LAB<span>Маркетинг</span></p>
+                        <a href="">Проект LAB<br><span>Маркетинг</span></a>
+                        
                     </li>
                     <li>
                         <img src="./images/3.9.jpg" alt="Ссылка на сайт с ноутбуком">
-                        <p>Growing Business<span>Приложение</span></p>
+                        <a href="">Growing Business<br><span>Приложение</span></a>
+                        
                     </li>
                 </ul>
             </section>
@@ -92,7 +102,7 @@
                 <address class="footer--address">
                     <p>г. Киев, пр-т Леси Украинки, 26</p>
                     <ul>
-                        <li><a href="info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>

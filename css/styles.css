@@ -10,13 +10,13 @@ html{
 section{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .contents{
-    max-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0%;
 }
 /* все цвета на всех страничках */
 body{
@@ -28,6 +28,7 @@ body{
 :root{--ground-color: #2f303a;}
 :root{--team-color: #f5f4fa;}
 :root{--p-color: #757575;}
+:root{--streng-black:#212121;}
 /* общие стили текста на всех страничках */
 .pages{
     max-width: 1600px;
@@ -36,13 +37,6 @@ body{
     font-style: normal;
     background-color: var(--fon-color);
     margin: 0 auto 0 auto;
-}
-.main h2{
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    line-height: 41px;
 }
 a{
     text-decoration: none;
@@ -73,12 +67,20 @@ li{
     justify-content: space-around;
     width: 35%;
 }
+.header--address a{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--p-color);
+}
 .logo{
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    color: var(--main-color);
 }
 .logo span{
     color: var(--second-color);
@@ -86,8 +88,14 @@ li{
 .header--nav>ul{
     display: flex;
 }
-.header a{
+.notactive{
     color: var(--main-color);
+}
+.hover:hover, .hover:focus{
+    color: var(--second-color);
+}
+.active-alltime{
+    color: var(--second-color);
 }
 /* стили для подвала на всех страницах*/
 .footer{
@@ -98,15 +106,31 @@ li{
     justify-content: space-between;
     align-items: center;
 }
-.footer--address{
+/* .footer--address{
     display: flex;
     flex-direction: column;
     
-}
+} */
 .footer a{
     color: var(--fon-color);
 }
+.adress--citi{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+}
 /* стили только для главной странички */
+ .h2{
+    color: var(--streng-black);
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    line-height: 41px;
+ }
 /* общие стили главной странички */
 /* основная секция с кнопкой */
 .main--one{
@@ -144,7 +168,8 @@ li{
     box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
 }
 /* секция преимуществ */
-.main--we h2{
+
+.none{
     color: var(--fon-color);
 }
 .main--we h3{
@@ -163,47 +188,85 @@ li{
     letter-spacing: 0.03em;
     color: var(--p-color);
 }
-.main--we ul{
+
+.main--we--about{
     display: flex;
+    justify-content: space-between;
+    padding: 0px;
 }
 .main--we li{
     width: 270px;
-    height: 101px;
+    min-height: 101px;
 }
 /* секция фотографий*/
 .main--photo{
     min-height: 550px;
-    
 }
-.main--photo ul{
+.pictures{
     display: flex;
-    
+    justify-content: space-between;
+    padding: 0px;
 }
+
 /* секция портретов */
 .main--portret{
     background-color: var(--team-color);
-    height: 650px;
-    
+    min-height: 650px;
 }
 .portret{
     display: flex;
+    justify-content: space-between;
     
 }
 .portret>li{
     max-width: 270px;
-    height: 368px;
+    min-height: 368px;
     background-color: var(--fon-color);
+    text-align: center;
 }
+.portret h3{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: var(--streng-black);
+}
+.portret a{
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: var(--p-color);
+}
+
 /* стили только для портфолио */
+/* общие стили только этой странички */
+.pages--portfolio{
+    min-height: 1850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* стили для кнопок */
 .portfolio--menu{
     display: flex;
 }
+/* стилизация ссылок */
+
 .portfolio--works{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 .portfolio--works li{
     width: 370px;
-    height: 404px;
+    min-height: 404px;
+}
+.portfolio--works a{
+    margin-left: 25px;
+    padding-top: 120px;
+}
+.portfolio--works span{
+    margin-left: 25px;
 }
