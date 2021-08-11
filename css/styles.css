@@ -148,15 +148,13 @@ li{
     align-items: center;
     flex-direction: column;
     background-color: var(--ground-color);
-    height: 600px;
+    padding: 200px;
 }
 .hero--idea{
     color: var(--fon-color);
     font-size: 44px;
     font-weight: 900;
     text-align: center;
-    width: 696px;
-    height: 120px;
     line-height: 1.3;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -173,6 +171,7 @@ li{
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+    margin-top: 30px;
     background-color: var(--second-color);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
     cursor: pointer;
