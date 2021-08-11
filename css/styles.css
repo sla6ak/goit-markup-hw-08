@@ -108,7 +108,7 @@ li{
     align-items: center;
     padding: 50px 0px;
 }
-.bottom--info a{
+.bottom--info .logo{
     color: var(--fon-color);
 }
 .adress--city{
@@ -122,7 +122,7 @@ li{
 .bottom--address li{
     margin-left: -40px;
 }
-.bottom--address a{
+.bottom--address--link{
     color: var(--rgba-color);
     font-size: 14px;
     line-height: 1.7;
@@ -130,6 +130,9 @@ li{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
+}
+.hover:hover, .hover:focus{
+    color: var(--second-color);
 }
 /* стили только для главной странички */
 .title2{
