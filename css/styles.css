@@ -1,30 +1,40 @@
+/* это полезная подготовка перед стилизацией */
+/* *************************************************** */
 /* общие стили всех страничек */
 html{
     box-sizing: border-box;
 }
+/* по умолчанию центрируем все элементы на сайте */
+/* также сбрасывает марджины у заголовков */
 *,
 *::before,
 *::after {
   box-sizing: inherit;
-  margin: 0 auto 0 auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
 }
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
 .conteiner{
     width: 1230px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-/* все цвета на всех страничках */
-/* цвет подложки временное решение для глаз - потом удалится */
-body{
+ body{
     font-family: Roboto;
     font-style: normal;
 }
+/* *************************************************** */
+/* все цвета на всех страничках */
+
 :root{
     --main-color: #000000;
     --rgba-color: rgba(255,255,255,0.5);
@@ -36,45 +46,18 @@ body{
     --second-color: #2196F3;
     }
 
-/* общие стили текста на всех страничках */
- 
-a{
-    text-decoration: none;
-}
-li{
-    list-style-type: none;
-}
-/* стили для шапки на всех страницах */
+/* *************стили для шапки на всех страницах************* */
+/* центруем шапку по горизонтали */
 .top{
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
+/* логотип +ссылки по страницам */
 .top--nav{
     display: flex;
-    justify-content: space-around;
+    margin-left: 0px;
+    margin-right: 0px;
     align-items: center;
-    width: 50%;
-}
-.top--nav--pages{
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-}
-.top--nav--pages .hover{
-    font-weight: 500;
-}
-.top--address{
-    display: flex;
-    justify-content: space-around;
-    width: 35%;
-}
-.top--address .hover{
-    font-size: 14px;
-    line-height: 1.7;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: var(--p-color);
 }
 .logo{
     font-family: Raleway;
@@ -83,30 +66,61 @@ li{
     line-height: 1.3;
     letter-spacing: 0.03em;
     color: var(--main-color);
+    display: block;
+    margin-right: 93px;
 }
 .logo span{
     color: var(--second-color);
 }
-.top--nav>ul{
+.top--nav--pages{
     display: flex;
+}
+.nav--pages + .nav--pages{
+    margin-left: 30px;
 }
 .notactive{
     color: var(--main-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* active-alltime обязательно ниже notactive */
+.active-alltime{
+    color: var(--second-color);
+}
+.top--nav--pages .hover{
+    font-weight: 500;
+}
+/* ссылки на телефон */
+.top--address{
+    display: flex;
+    margin-right: 0px;
+}
+.top--address li+li{
+    margin-left: 50px;
+}
+.top--address .hover{
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--p-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .hover:hover, .hover:focus{
     color: var(--second-color);
 }
-.active-alltime{
-    color: var(--second-color);
+header{
+    border-bottom: 1px solid #ebebeb;
 }
-/* стили для подвала на всех страницах*/
+/* ****************стили для подвала на всех страницах************ */
 .bottom--info{
     background-color: var(--ground-color);
     color: var(--fon-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 0px;
+    padding: 60px 0px;
 }
 .bottom--info .logo{
     color: var(--fon-color);
@@ -117,10 +131,10 @@ li{
     letter-spacing: 0.03em;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
-.bottom--address li{
-    margin-left: -40px;
+.bottom--address{
+    margin-top: 20px;
 }
 .bottom--address--link{
     color: var(--rgba-color);
@@ -129,7 +143,7 @@ li{
     letter-spacing: 0.03em;
     font-family: Roboto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
 }
 .hover:hover, .hover:focus{
     color: var(--second-color);
@@ -142,16 +156,18 @@ li{
     font-size: 36px;
     letter-spacing: 0.03em;
     line-height: 1.3;
+    margin-bottom: 50px;
  }
 /* общие стили главной странички */
 /* основная секция с кнопкой */
 .hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 1600px;
+    height: 600px;
     background-color: var(--ground-color);
-    padding: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero--idea{
     color: var(--fon-color);
@@ -161,33 +177,39 @@ li{
     line-height: 1.3;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 .hero__button{
     width: 200px;
     height: 50px;
     color: var(--fon-color);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     font-weight: bold;
     letter-spacing: 0.06em;
-    display: flex;
     align-items: center;
-    justify-content: center;
     border-radius: 4px;
-    margin-top: 30px;
     background-color: var(--second-color);
     box-shadow: 0px 4px 4px rgba(0,0,0,0.15);
     cursor: pointer;
+    border: 0px;
 }
 /* секция преимуществ */
+.we{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .we--about{
     display: flex;
-    padding: 0px;
-    margin: 60px 0px;
 }
-.none{
-    color: var(--fon-color);
-    font-size: 1px;
+.we--puncts{
+    width: 270px;
+}
+.we--puncts+.we--puncts{
+    margin-left: 30px;
 }
 .we--title{
     font-family: Roboto;
@@ -204,23 +226,28 @@ li{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--p-color);
-    padding-right: 15%;
 }
 /* секция фотографий*/
+.photo{
+    padding-bottom: 94px;
+}
+.pictures--work + .pictures--work{
+    margin-left: 30px;
+}
 .pictures{
     display: flex;
-    margin:50px 0px;
-    padding-left: 0px;
 }
 /* секция портретов */
 .comando{
     background-color: var(--team-color);
-    padding: 60px 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .portrets{
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+}
+.portrets--card+.portrets--card{
+    margin-left: 30px;
 }
 .portrets--card{
     background-color: var(--fon-color);
@@ -234,7 +261,7 @@ font-size: 16px;
 line-height: 2;
 letter-spacing: 0.03em;
 color: var(--streng-black);
-margin-top: 20px;
+
 }
 .profesional{
 font-weight: normal;
@@ -282,9 +309,7 @@ margin-bottom: 25px;
 }
 
 /* стилизация ссылок */
-.portfolio{
-    border-top: 1px solid var(--team-color);
-}
+
 .portfolio--works{
     display: flex;
     flex-wrap: wrap;

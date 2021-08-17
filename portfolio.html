@@ -13,28 +13,29 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="top conteiner">
+    <header>
+        <div class="top conteiner">
             <nav class="top--nav">
-                <!-- веб всегда синий а студия то черная то белая зависит от фона обернем в спан. -->
-                <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+                <!-- этот логотип навигационная ссылка -->
+                <a href="#" id="link-header" class="logo"><span>Web</span>Studio</a>
                 <ul class="top--nav--pages">
-                    <li>
-                        <a href="./index.html" class="hover notactive">Студия</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover active-alltime">Портфолио</a>
-                    </li>
-                    <li>
-                        <!-- это переход в меню адресов и контактов -->
-                        <a href="#link-adress1" class="hover notactive">Контакты</a>
-                    </li>
-        
-                </ul>
+                        <li class="nav--pages">
+                            <a href="./index.html" class="hover notactive">Студия</a>
+                        </li>
+                        <li class="nav--pages">
+                            <a href="#" class="hover notactive active-alltime">Портфолио</a>
+                        </li>
+                        <li class="nav--pages">
+                            <!-- это переход в меню адресов и контактов -->
+                            <a href="#link-adress1" class="hover notactive">Контакты</a>
+                        </li>
+                    </ul>
             </nav>
             <ul class="top--address">
-                <li><a href="mailto:info@devstudio.com" class="hover">info@devstudio.com</a></li>
+                <li><a href="mailto:info@devstudio.com" class="hover top--adress--link">info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111" class="hover">+38 096 111 11 11</a></li>
             </ul>
+        </div>
     </header>
     <main class="portfolio">
         <section class="conteiner">
