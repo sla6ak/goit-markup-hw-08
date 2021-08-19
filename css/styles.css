@@ -127,7 +127,7 @@ li{
 .hover:hover, .hover:focus{
     color: var(--second-color);
 }
-header{
+.start{
     border-bottom: 1px solid var(--border-color);
 }
 /* ****************стили для подвала на всех страницах************ */
