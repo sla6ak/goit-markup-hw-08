@@ -356,7 +356,6 @@ header{
     padding-right: 24px;
 }
 .sait--title{
-    margin-left: 25px;
     color: var(--streng-black);
     font-size: 18px;
     line-height: 2;
@@ -367,7 +366,6 @@ header{
     margin-bottom: 4px;
 }
 .sait--tipe{
-    margin-left: 25px;
     color: var(--p-color);
     font-size: 16px;
     line-height: 1.7;
