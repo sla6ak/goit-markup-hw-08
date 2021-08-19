@@ -182,8 +182,11 @@ ul .address--write:not(:last-child){
 /* общие стили главной странички */
 /* основная секция с кнопкой */
 .hero{
-    width: 1600px;
+    background-color: var(--ground-color);
+    
     background: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-right: auto;
