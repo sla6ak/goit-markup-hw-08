@@ -57,6 +57,8 @@ li{
     --fon-color: #ffffff; 
     --second-color: #2196F3;
     --border-color: #eeeeee;
+    --background-we: #f5f4fa;
+    --borders-svg: #afb1b8;
     }
 
 
@@ -127,14 +129,29 @@ li{
 .hover:hover, .hover:focus{
     color: var(--second-color);
 }
+.top--address-svg1{
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+}
+.top--address-svg2{
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+}
 .start{
     border-bottom: 1px solid var(--border-color);
 }
+
 /* ****************стили для подвала на всех страницах************ */
 .bottom--info{
     background-color: var(--ground-color);
     color: var(--fon-color);
     padding: 60px 0px;
+    
+}
+.bottom--info>.conteiner{
+    display: flex;
 }
 .bottom--info .logo{
     color: var(--fon-color);
@@ -165,10 +182,48 @@ ul .address--write:not(:last-child){
 .hover:hover, .hover:focus{
     color: var(--second-color);
 }
-/* никому не мешал марджин правый но можно и убрать */
+
 .bottom--info .logo{
    margin-right: auto;
 }
+.go-go{
+    margin-left: 70px;
+}
+.go-go--title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.go-go--list{
+    display: flex;
+    margin-top: 20px;
+}
+.go-go-li-svg+.go-go-li-svg{
+    margin-left: 10px;
+}
+.bottom-link-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: var(--fon-color);
+}
+.bottom-link-svg:hover, .bottom-link-svg:focus{
+    background-color: var(--second-color);
+}
+.bottom-svg{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+
 /* стили только для главной странички */
 .title2{
     color: var(--streng-black);
@@ -183,8 +238,9 @@ ul .address--write:not(:last-child){
 /* основная секция с кнопкой */
 .hero{
     
-    
-    background: url(../images/hero.jpg);
+    width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: var(--ground-color);
@@ -242,6 +298,51 @@ ul .address--write:not(:last-child){
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.we--puncts1::before {
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-we);
+    background-image: url(../images/antenna\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.we--puncts2::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-we);
+    background-image: url(../images/clock\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.we--puncts3::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-we);
+    background-image: url(../images/diagram\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.we--puncts4::before {
+    display: block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-color: var(--background-we);
+    background-image: url(../images/astronaut\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
 .we--about--text{
     font-family: Roboto;
     font-weight: 400;
@@ -302,7 +403,55 @@ ul .address--write:not(:last-child){
     letter-spacing: 0.03em;
     color: var(--p-color);
 }
+.go-go-link-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--fon-color);
+    border-radius: 50%;
+    color: var(--borders-svg);
+}
+.go-go-link-svg:hover, .go-go-link-svg:focus{
+    background-color: var(--second-color);
+    color: var(--fon-color);
+}
+.go-go-svg{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+/* раздел с клиентами */
+.clients{
+    display: flex;
+}
+.clients-li-svg{
+    display: block;
+}
+.clients-li-svg+.clients-li-svg{
+    margin-left: 30px;
+}
+.clients-link-svg{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--borders-svg);
+    border: 1px solid var(--borders-svg);
 
+}
+.clients-link-svg:hover{
+    color: var(--second-color);
+    border-color: var(--second-color);
+}
+.clients-svg{
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+    
+}
 /* стили только для портфолио */
 /* общие стили только этой странички */
 .portfolio{
