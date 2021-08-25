@@ -133,11 +133,13 @@ li{
     width: 16px;
     height: 12px;
     fill: currentColor;
+    margin-right: 10px;
 }
 .top--address-svg2{
     width: 10px;
     height: 16px;
     fill: currentColor;
+    margin-right: 10px;
 }
 .start{
     border-bottom: 1px solid var(--border-color);
@@ -476,6 +478,9 @@ ul .address--write:not(:last-child){
     letter-spacing: 0.03em;
     color: var(--streng-black);
     cursor: pointer;
+}
+.filter:hover, .filter:focus{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
 }
 .portfolio--filter{
     margin: 0px 4px 0px 4px;
