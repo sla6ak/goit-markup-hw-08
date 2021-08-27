@@ -85,6 +85,10 @@ li{
     display: block;
     margin-right: 93px;
 }
+.top-logo{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .logo span{
     color: var(--second-color);
 }
@@ -117,12 +121,14 @@ li{
     margin-left: 50px;
 }
 .top--address .hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 14px;
     line-height: 1.7;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--p-color);
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -190,6 +196,9 @@ ul .address--write:not(:last-child){
 }
 .go-go{
     margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .go-go--title{
     font-family: Roboto;
@@ -444,7 +453,8 @@ ul .address--write:not(:last-child){
     border: 1px solid var(--borders-svg);
 
 }
-.clients-link-svg:hover{
+.clients-link-svg:hover,
+.clients-link-svg:focus{
     color: var(--second-color);
     border-color: var(--second-color);
 }
