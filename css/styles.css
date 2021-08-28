@@ -125,7 +125,7 @@ li{
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: auto;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: var(--p-color);
@@ -160,6 +160,7 @@ li{
 }
 .bottom--info>.conteiner{
     display: flex;
+    align-items: baseline;
 }
 .bottom--info .logo{
     color: var(--fon-color);
@@ -196,9 +197,6 @@ ul .address--write:not(:last-child){
 }
 .go-go{
     margin-left: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .go-go--title{
     font-family: Roboto;
@@ -379,7 +377,7 @@ ul .address--write:not(:last-child){
 .portrets{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -30px;
+    margin-top: -30px;
     margin-left: -30px;
 }
 
@@ -451,7 +449,7 @@ ul .address--write:not(:last-child){
     align-items: center;
     color: var(--borders-svg);
     border: 1px solid var(--borders-svg);
-
+    border-radius: 4px;
 }
 .clients-link-svg:hover,
 .clients-link-svg:focus{
