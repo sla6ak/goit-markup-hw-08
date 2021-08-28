@@ -132,8 +132,10 @@ li{
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.hover:hover, .hover:focus{
+.hover:hover,
+.hover:focus{
     color: var(--second-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top--address-svg1{
     width: 16px;
@@ -188,8 +190,10 @@ ul .address--write:not(:last-child){
     font-style: normal;
     font-weight: 400;
 }
-.hover:hover, .hover:focus{
+.hover:hover,
+.hover:focus{
     color: var(--second-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bottom--info .logo{
@@ -224,8 +228,10 @@ ul .address--write:not(:last-child){
     border-radius: 50%;
     color: var(--fon-color);
 }
-.bottom-link-svg:hover, .bottom-link-svg:focus{
+.bottom-link-svg:hover,
+.bottom-link-svg:focus{
     background-color: var(--second-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-svg{
     fill: currentColor;
@@ -364,8 +370,28 @@ ul .address--write:not(:last-child){
 .photo{
     padding-bottom: 94px;
 }
+.pictures--work{
+    position: relative;
+}
 .pictures--work + .pictures--work{
     margin-left: 30px;
+}
+.pictures--work__about{
+    display: block;
+    position: absolute;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    width: 100%;
+    bottom: 0;
+    color: var(--fon-color);
+    background: rgba(47, 48, 58, 0.8);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 .pictures{
     display: flex;
@@ -422,9 +448,11 @@ ul .address--write:not(:last-child){
     border-radius: 50%;
     color: var(--borders-svg);
 }
-.go-go-link-svg:hover, .go-go-link-svg:focus{
+.go-go-link-svg:hover,
+.go-go-link-svg:focus{
     background-color: var(--second-color);
     color: var(--fon-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .go-go-svg{
     fill: currentColor;
@@ -455,6 +483,7 @@ ul .address--write:not(:last-child){
 .clients-link-svg:focus{
     color: var(--second-color);
     border-color: var(--second-color);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-svg{
     fill: currentColor;
@@ -489,6 +518,7 @@ ul .address--write:not(:last-child){
 }
 .filter:hover, .filter:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio--filter{
     margin: 0px 4px 0px 4px;
@@ -524,6 +554,33 @@ ul .address--write:not(:last-child){
 }
 .sait--hover:hover, .sait--hover:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sait--img{
+    position: relative;
+}
+.sait--discription{
+    position: absolute;
+    padding-top: 62px;
+    padding-bottom: 62px;
+    padding-left: 23px;
+    padding-right: 23px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--fon-color);
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    letter-spacing: 0.03em;
+}
+.sait--hover:hover .sait--discription,
+.sait--hover:focus .sait--discription{
+    opacity: 1;
+    transition: 500ms;
 }
 .sait--text{
     padding-top: 20px;
