@@ -51,7 +51,7 @@
     <main class="main">
         <section class="hero">
             <h1 class="hero--idea">Эффективные решения<br>для вашего бизнеса</h1>
-            <button class="hero__button data-modal-open" type="button">Заказать услугу</button>
+            <button data-modal-open class="hero__button data-modal-open" type="button">Заказать услугу</button>
         </section>
         <section class="section we">
             <div class="conteiner">
@@ -377,6 +377,12 @@
             </div>
         </div>
     </footer>
+    <div data-modal class="modal is-hidden">
+        <div class="modal-view">
+            <button data-modal-close class="modal-close" type="button">X</button>
+
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
