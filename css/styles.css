@@ -59,6 +59,8 @@ li{
     --border-color: #eeeeee;
     --background-we: #f5f4fa;
     --borders-svg: #afb1b8;
+    --time-animation: 250ms;
+    --cubik-transform: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 
@@ -103,11 +105,22 @@ li{
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    
 }
 
 /* active-alltime обязательно ниже notactive */
 .active-alltime{
     color: var(--second-color);
+    position: relative;
+}
+.active-alltime::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    background-color: var(--second-color);
 }
 .top--nav--pages .hover{
     font-weight: 500;
@@ -131,11 +144,16 @@ li{
     color: var(--p-color);
     padding-top: 32px;
     padding-bottom: 32px;
+  
+}
+.hover{
+    transition-property: color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 .hover:hover,
 .hover:focus{
     color: var(--second-color);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .top--address-svg1{
     width: 16px;
@@ -190,11 +208,6 @@ ul .address--write:not(:last-child){
     font-style: normal;
     font-weight: 400;
 }
-.hover:hover,
-.hover:focus{
-    color: var(--second-color);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .bottom--info .logo{
    margin-right: auto;
@@ -227,11 +240,14 @@ ul .address--write:not(:last-child){
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: var(--fon-color);
+    transition-property: background-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+
 }
 .bottom-link-svg:hover,
 .bottom-link-svg:focus{
     background-color: var(--second-color);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bottom-svg{
     fill: currentColor;
@@ -447,12 +463,14 @@ ul .address--write:not(:last-child){
     background-color: var(--fon-color);
     border-radius: 50%;
     color: var(--borders-svg);
+    transition-property: color, background-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 .go-go-link-svg:hover,
 .go-go-link-svg:focus{
     background-color: var(--second-color);
     color: var(--fon-color);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .go-go-svg{
     fill: currentColor;
@@ -478,12 +496,14 @@ ul .address--write:not(:last-child){
     color: var(--borders-svg);
     border: 1px solid var(--borders-svg);
     border-radius: 4px;
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link-svg:hover,
 .clients-link-svg:focus{
     color: var(--second-color);
     border-color: var(--second-color);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-svg{
     fill: currentColor;
@@ -515,10 +535,12 @@ ul .address--write:not(:last-child){
     letter-spacing: 0.03em;
     color: var(--streng-black);
     cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 .filter:hover, .filter:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio--filter{
     margin: 0px 4px 0px 4px;
@@ -527,6 +549,11 @@ ul .address--write:not(:last-child){
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
     background-color: var(--second-color);
     color: var(--fon-color);
+}
+.portfolio--menu button{
+    transition-property: background-color, color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 .portfolio--menu button:hover, .portfolio--menu button:focus{
     background-color: var(--second-color);
@@ -551,13 +578,16 @@ ul .address--write:not(:last-child){
 
 .sait--hover{
     display: block;
+    transition-property: box-shadow;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 .sait--hover:hover, .sait--hover:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sait--img{
     position: relative;
+    overflow: hidden;
 }
 .sait--discription{
     position: absolute;
@@ -574,13 +604,15 @@ ul .address--write:not(:last-child){
     line-height: 1.56;
     color: var(--fon-color);
     background: rgba(33, 150, 243, 0.9);
-    opacity: 0;
     letter-spacing: 0.03em;
+    transform: translateY(100%);
+    transition: transform;
+    transition-duration: var(--time-animation);
+    transition-property: var(--cubik-transform);
 }
 .sait--hover:hover .sait--discription,
 .sait--hover:focus .sait--discription{
-    opacity: 1;
-    transition: 500ms;
+    transform: translateY(0);
 }
 .sait--text{
     padding-top: 20px;
