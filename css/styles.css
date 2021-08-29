@@ -532,7 +532,11 @@ ul .address--write:not(:last-child){
     min-width: 528px;
     min-height: 581px;
     background-color: #fff;
-   
+}
+.modal-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
 /* стили только для портфолио */
 /* общие стили только этой странички */
