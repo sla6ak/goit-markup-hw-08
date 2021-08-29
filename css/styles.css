@@ -537,8 +537,9 @@ ul .address--write:not(:last-child){
     position: absolute;
     right: 10px;
     top: 10px;
-    border: 1px solid #000000;
+    border: 1px solid var(--borders-svg);
     border-radius: 50%;
+    background-color: var(--fon-color);
     width: 30px;
     height: 30px;
 }
