@@ -124,6 +124,9 @@ li{
 }
 .top--nav--pages .hover{
     font-weight: 500;
+    line-height: 1.2;
+    font-size: 14px;
+    letter-spacing: 0.2em;
 }
 /* ссылки на телефон */
 .top--address{
