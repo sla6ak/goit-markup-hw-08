@@ -272,7 +272,7 @@ ul .address--write:not(:last-child){
 /* основная секция с кнопкой */
 .hero{
     
-    width: 1600px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
     background-repeat: no-repeat;
@@ -545,6 +545,13 @@ ul .address--write:not(:last-child){
     background-color: var(--fon-color);
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-close-svg2{
+    width: 18px;
+    height: 18px;
 }
 /* стили только для портфолио */
 /* общие стили только этой странички */
