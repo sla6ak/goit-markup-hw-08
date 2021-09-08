@@ -218,6 +218,9 @@ ul .address--write:not(:last-child){
 .go-go{
     margin-left: 70px;
 }
+.go-go--sabmit{
+    flex-grow: 2;
+}
 .go-go--title{
     font-family: Roboto;
     font-style: normal;
@@ -257,7 +260,23 @@ ul .address--write:not(:last-child){
     width: 20px;
     height: 20px;
 }
-
+/* стили для третьей колонки подвала */
+.botton--form{
+    display: flex;
+    margin-top: 20px;
+}
+.bottom--email{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    margin-right: 12px;
+    padding: 15px 16px;
+    color: var(--fon-color);
+}
 /* стили только для главной странички */
 .title2{
     color: var(--streng-black);
@@ -294,7 +313,7 @@ ul .address--write:not(:last-child){
     margin-bottom: 30px;
 }
 .hero__button{
-    width: 200px;
+    min-width: 200px;
     height: 50px;
     color: var(--fon-color);
     margin-left: auto;
@@ -561,11 +580,20 @@ ul .address--write:not(:last-child){
     height: 18px;
 }
 /* контент модального окна */
+.pleas{
+    margin-bottom: 12px;
+    color: var(--streng-black);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .form--studio{
     display: flex;
     flex-direction: column;
     color: var(--p-color);
-    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -575,6 +603,13 @@ ul .address--write:not(:last-child){
 .input--style{
     height: 40px;
     margin-bottom: 10px;
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 .name--label{
     margin-bottom: 4px;
@@ -582,6 +617,29 @@ ul .address--write:not(:last-child){
 .form--coment{
     padding: 12px 16px;
     margin-bottom: 20px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.check{
+    width: 16px;
+    height: 15px;
+}
+.licensia{
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.licensia--text{
+    margin-left: 8px;
+}
+.licensia a{
+    text-decoration: underline;
+    color: var(--second-color);
 }
 /* стили только для портфолио */
 /* общие стили только этой странички */
