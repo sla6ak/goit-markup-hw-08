@@ -126,7 +126,7 @@ li{
     font-weight: 500;
     line-height: 1.2;
     font-size: 14px;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.02em;
 }
 /* ссылки на телефон */
 .top--address{
@@ -396,11 +396,12 @@ ul .address--write:not(:last-child){
     margin-left: 30px;
 }
 .pictures--work__about{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    padding-top: 27px;
-    padding-bottom: 27px;
     width: 100%;
+    height: 70px;
     bottom: 0;
     color: var(--fon-color);
     background: rgba(47, 48, 58, 0.8);
@@ -445,10 +446,10 @@ ul .address--write:not(:last-child){
     display: block;
     font-weight: 500;
     font-size: 16px;
-    line-height: 2;
+    line-height: 1.3;
     letter-spacing: 0.03em;
     color: var(--streng-black);
-
+    margin-bottom: 10px;
 }
 .profesional{
     font-weight: normal;
@@ -500,8 +501,8 @@ ul .address--write:not(:last-child){
     border: 1px solid var(--borders-svg);
     border-radius: 4px;
     transition-property: color, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 .clients-link-svg:hover,
 .clients-link-svg:focus{
@@ -522,6 +523,10 @@ ul .address--write:not(:last-child){
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 .modal.is-hidden{
     opacity: 0;
@@ -577,27 +582,20 @@ ul .address--write:not(:last-child){
     letter-spacing: 0.03em;
     color: var(--streng-black);
     cursor: pointer;
-    transition-property: box-shadow;
+    transition-property: box-shadow, background-color, color;
     transition-duration: var(--time-animation);
     transition-timing-function: var(--cubik-transform);
 }
 .filter:hover, .filter:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
+    background-color: var(--second-color);
+    color: var(--fon-color);
 }
 .portfolio--filter{
     margin: 0px 4px 0px 4px;
 }
 .filter-down{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
-    background-color: var(--second-color);
-    color: var(--fon-color);
-}
-.portfolio--menu button{
-    transition-property: background-color, color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
-}
-.portfolio--menu button:hover, .portfolio--menu button:focus{
     background-color: var(--second-color);
     color: var(--fon-color);
 }
@@ -647,7 +645,7 @@ ul .address--write:not(:last-child){
     color: var(--fon-color);
     background: rgba(33, 150, 243, 0.9);
     letter-spacing: 0.03em;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform;
     transition-duration: var(--time-animation);
     transition-property: var(--cubik-transform);
