@@ -516,6 +516,7 @@ ul .address--write:not(:last-child){
     
 }
 /* модальное окно на главной страничке */
+/* задаю по умолчанию опасити1 чтоб анимировать его при появлении */
 .modal{
     position: fixed;
     width: 100%;
@@ -540,6 +541,7 @@ ul .address--write:not(:last-child){
     min-width: 528px;
     min-height: 581px;
     background-color: #fff;
+    padding: 40px;
 }
 .modal-close{
     position: absolute;
