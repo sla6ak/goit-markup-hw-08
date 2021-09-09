@@ -377,9 +377,14 @@
             </div>
             <div class="go-go go-go--sabmit" >
                 <h3 class="go-go--title">Подпишитесь на рассылку</h3>
-                <form action="" class="botton--form">
+                <form action="#" class="botton--form">
                     <input type="email" class="bottom--email" name="email" placeholder="E-mail">
-                    <button type="submit" class="hero__button">Подписаться</button>
+                    <button type="submit" class="hero__button">Подписаться
+                        <svg class="submit-svg" >
+                            <use href="./images/svg/symbol-defs.svg#icon-icon-send">
+                            </use>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -387,29 +392,46 @@
     <div data-modal class="modal is-hidden">
         <div class="modal-view">
             <button data-modal-close class="modal-close" type="button">
-                <svg class="modal-close-svg2"><use href="./images/svg/modal-clouse.svg#icon-close-black-18dp-2-1">
+                <svg class="modal--svg"><use href="./images/svg/symbol-defs.svg#icon-close-black-18dp-2-1-1">
                 </use></svg>
             </button>
             <p class="pleas">Оставьте свои данные, мы вам перезвоним</p>
-            <form action="" class="form--studio">
-                <label for="your--name" class="name--label">Имя</label>
-                <input type="text" class="input--style" id="your--name" name="name">
-                <label for="your--tel" class="name--label">Телефон</label>
-                <input type="tel" class="input--style" id="your--tel" name="tel">
-                <label for="your--email" class="name--label">Почта</label>
-                <input type="email" class="input--style" id="your--email" name="email">
+            <form action="#" class="form--studio">
+                <span class="form--input">
+                    <label for="your--name" class="name--label">Имя</label>
+                    <input type="text" class="input--style" id="your--name" name="name">
+                    <svg class="modal--svg icon--input"><use href="./images/svg/symbol-defs.svg#icon-person-black-18dp-1">
+                    </use></svg>
+                </span>
+                <span class="form--input">
+                    <label for="your--tel" class="name--label">Телефон</label>
+                    <input type="tel" class="input--style" id="your--tel" name="tel">
+                    <svg class="modal--svg icon--input"><use href="./images/svg/symbol-defs.svg#icon-phone-black-18dp-1">
+                    </use></svg>
+                </span>
+                <span class="form--input">
+                    <label for="your--email" class="name--label">Почта</label>
+                    <input type="email" class="input--style" id="your--email" name="email">
+                    <svg class="modal--svg icon--input"><use href="./images/svg/symbol-defs.svg#icon-email-black-18dp-1">
+                    </use></svg>
+                </span>
                 <label for="form--text" class="name--label">Коментарий</label>
                 <textarea name="coments" id="form--text" placeholder="Введите текст" class="form--coment"></textarea>
                 <!-- cols="30" rows="10" -->
-                <label for="" class="licensia">
-                    <input type="checkbox" class="check">
-                    <span class="licensia--text">Соглашаюсь с рассылкой и принимаю</span>
+                <div class="licensia">
+                    <div class="border--checed">
+                        <svg class="check--svg" id="castom"><use href="./images/svg/symbol-defs.svg#icon-icon-check">
+                        </use></svg>
+                    </div>
+                    <input type="checkbox" class="check" id="selected" onchange="fun1()">
+                    <label for="selected" class="check--licensia">Соглашаюсь с рассылкой и принимаю</label>
                     <a href="">Условия договора</a>
-                </label>
+                </div>
                 <button type="submit" class="hero__button">Отправить</button>
             </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/checkbox.js"></script>
 </body>
 </html>

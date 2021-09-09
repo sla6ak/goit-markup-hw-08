@@ -277,6 +277,12 @@ ul .address--write:not(:last-child){
     padding: 15px 16px;
     color: var(--fon-color);
 }
+.submit-svg{
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
 /* стили только для главной странички */
 .title2{
     color: var(--streng-black);
@@ -318,7 +324,10 @@ ul .address--write:not(:last-child){
     color: var(--fon-color);
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    padding: 28px 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     font-size: 16px;
     line-height: 1.5;
     font-weight: bold;
@@ -566,7 +575,7 @@ ul .address--write:not(:last-child){
     position: absolute;
     right: 10px;
     top: 10px;
-    border: 1px solid var(--borders-svg);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: var(--fon-color);
     width: 30px;
@@ -574,10 +583,18 @@ ul .address--write:not(:last-child){
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
-.modal-close-svg2{
+.modal-close:hover .modal--svg{
+    fill: var(--second-color);
+}
+.modal--svg{
     width: 18px;
     height: 18px;
+    fill: var(--main-color);
+    transition-property: fill;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
 /* контент модального окна */
 .pleas{
@@ -610,6 +627,27 @@ ul .address--write:not(:last-child){
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.input--style:hover,
+.input--style:focus{
+    border-color: var(--second-color);
+}
+.input--style:hover~svg,
+.input--style:focus~svg{
+    fill: var(--second-color);
+}
+.form--input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.icon--input{
+    position: absolute;
+    left: 12px;
+    top: 28px;
 }
 .name--label{
     margin-bottom: 4px;
@@ -622,12 +660,47 @@ ul .address--write:not(:last-child){
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
-.check{
+.form--coment:hover,
+.form--coment:focus{
+    border-color: var(--second-color);
+}
+.check--svg{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 4px;
     width: 16px;
     height: 15px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.agrey{
+    opacity: 1;
+}
+.check{
+    display: none;
+}
+.check--licensia{
+    font-family: Roboto;
+    margin-right: 3px;
+}
+.border--checed{
+    border: 1px solid var(--streng-black);
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
 }
 .licensia{
+    display: flex;
+    align-items: center;
+    position: relative;
     margin-bottom: 32px;
     font-weight: 400;
     font-size: 14px;
