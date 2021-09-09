@@ -679,6 +679,7 @@ ul .address--write:not(:last-child){
     transition-property: opacity;
     transition-duration: var(--time-animation);
     transition-timing-function: var(--cubik-transform);
+    pointer-events: none;
 }
 .agrey{
     opacity: 1;
@@ -687,15 +688,20 @@ ul .address--write:not(:last-child){
     display: none;
 }
 .check--licensia{
-    font-family: Roboto;
-    margin-right: 3px;
+    margin-right: 4px;
 }
-.border--checed{
-    border: 1px solid var(--streng-black);
-    border-radius: 2px;
+.border::before{
+    content: "";
+    display: block;
     width: 16px;
     height: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 2px;
     margin-right: 8px;
+}
+.border{
+    display: flex;
+    align-items: center;
 }
 .licensia{
     display: flex;
