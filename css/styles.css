@@ -278,6 +278,14 @@ ul .address--write:not(:last-child){
     margin-right: 12px;
     padding: 15px 16px;
     color: var(--fon-color);
+    outline: none;
+    transition-property: border;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.bottom--email:hover,
+.bottom--email:focus{
+    border: 1px solid var(--second-color);
 }
 .submit-svg{
     fill: currentColor;
