@@ -375,10 +375,10 @@
                 </ul>
                
             </div>
-            <div class="go-go go-go--sabmit" >
+            <div class="go-go--sabmit" >
                 <h3 class="go-go--title">Подпишитесь на рассылку</h3>
                 <form action="#" class="botton--form">
-                    <input type="email" class="bottom--email" name="email" placeholder="E-mail">
+                    <input type="email" class="bottom--email" name="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     <button type="submit" class="hero__button">Подписаться
                         <svg class="submit-svg" >
                             <use href="./images/svg/symbol-defs.svg#icon-icon-send">
@@ -399,19 +399,19 @@
             <form action="#" class="form--studio">
                 <span class="form--input">
                     <label for="your--name" class="name--label">Имя</label>
-                    <input type="text" class="input--style" id="your--name" name="name">
+                    <input type="text" class="input--style" id="your--name" name="name" required minlength="2">
                     <svg class="modal--svg icon--input"><use href="./images/svg/symbol-defs.svg#icon-person-black-18dp-1">
                     </use></svg>
                 </span>
                 <span class="form--input">
                     <label for="your--tel" class="name--label">Телефон</label>
-                    <input type="tel" class="input--style" id="your--tel" name="tel">
+                    <input type="tel" class="input--style" id="your--tel" name="tel" required minlength="10" pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$">
                     <svg class="modal--svg icon--input"><use href="./images/svg/symbol-defs.svg#icon-phone-black-18dp-1">
                     </use></svg>
                 </span>
                 <span class="form--input">
                     <label for="your--email" class="name--label">Почта</label>
-                    <input type="email" class="input--style" id="your--email" name="email">
+                    <input type="email" class="input--style" id="your--email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                     <svg class="modal--svg icon--input"><use href="./images/svg/symbol-defs.svg#icon-email-black-18dp-1">
                     </use></svg>
                 </span>
