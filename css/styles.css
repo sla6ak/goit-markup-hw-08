@@ -43,7 +43,12 @@ li{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.none{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
 /* *************************************************** */
 /* все цвета на всех страничках */
 
@@ -599,7 +604,7 @@ ul .address--write:not(:last-child){
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    cursor: pointer;
 }
 .modal-close:hover .modal--svg{
     fill: var(--second-color);
@@ -636,7 +641,6 @@ ul .address--write:not(:last-child){
 .input--style{
     outline: none;
     height: 40px;
-    margin-bottom: 10px;
     padding-left: 42px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -660,6 +664,7 @@ ul .address--write:not(:last-child){
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-bottom: 10px;
 }
 .icon--input{
     position: absolute;
@@ -702,13 +707,16 @@ ul .address--write:not(:last-child){
 .agrey{
     opacity: 1;
 }
-.check{
+/* .check{
     display: none;
-}
+} */
 .check--licensia{
+    display: flex;
+    align-items: center;
     margin-right: 4px;
+    cursor: pointer;
 }
-.border::before{
+.check--licensia::before{
     content: "";
     display: block;
     width: 16px;
@@ -716,18 +724,24 @@ ul .address--write:not(:last-child){
     border: 1px solid var(--main-color);
     border-radius: 2px;
     margin-right: 8px;
+    transition-property: border-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
 }
-.border{
-    display: flex;
-    align-items: center;
+
+.check--licensia:hover::before,
+.check--licensia:focus::before{
+    border-color: var(--second-color);
 }
-.check--licensia:hover .border::before,
-.check--licensia:focus .border::before{
-border-color: var(--second-color);
+.check:hover~.check--licensia::before,
+.check:focus~.check--licensia::before{
+    border-color: var(--second-color);
 }
 .licensia{
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     margin-bottom: 32px;
     font-weight: 400;
@@ -770,7 +784,8 @@ border-color: var(--second-color);
     transition-duration: var(--time-animation);
     transition-timing-function: var(--cubik-transform);
 }
-.filter:hover, .filter:focus{
+.filter:hover,
+.filter:focus{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
     background-color: var(--second-color);
     color: var(--fon-color);
