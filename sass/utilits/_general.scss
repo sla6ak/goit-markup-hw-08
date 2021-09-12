@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+img{
+    display: block;
+    width: 100%; 
+    height: auto; 
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.conteiner{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+ body{
+    font-family: Roboto;
+    font-style: normal;
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.none{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+html{
+    box-sizing: border-box;
+}

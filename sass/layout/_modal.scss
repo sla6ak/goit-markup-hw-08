@@ -1,0 +1,190 @@
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.modal.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 528px;
+    min-height: 581px;
+    background-color: #fff;
+    padding: 40px;
+}
+.modal-close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--fon-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.modal-close:hover .modal--svg{
+    fill: var(--second-color);
+}
+.modal--svg{
+    width: 18px;
+    height: 18px;
+    fill: var(--main-color);
+    transition-property: fill;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+/* контент модального окна */
+.pleas{
+    margin-bottom: 12px;
+    color: var(--streng-black);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.form--studio{
+    display: flex;
+    flex-direction: column;
+    color: var(--p-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+.input--style{
+    outline: none;
+    height: 40px;
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.input--style:hover,
+.input--style:focus{
+    border-color: var(--second-color);
+}
+.input--style:hover~svg,
+.input--style:focus~svg{
+    fill: var(--second-color);
+}
+.form--input{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 10px;
+}
+.icon--input{
+    position: absolute;
+    left: 12px;
+    top: 28px;
+}
+.name--label{
+    margin-bottom: 4px;
+}
+.form--coment{
+    outline: none;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.form--coment:hover,
+.form--coment:focus{
+    border-color: var(--second-color);
+}
+.check--svg{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 16px;
+    height: 15px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+    pointer-events: none;
+}
+.agrey{
+    opacity: 1;
+}
+/* .check{
+    display: none;
+} */
+.check--licensia{
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.check--licensia::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 2px;
+    margin-right: 8px;
+    transition-property: border-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+
+.check--licensia:hover::before,
+.check--licensia:focus::before{
+    border-color: var(--second-color);
+}
+.check:hover~.check--licensia::before,
+.check:focus~.check--licensia::before{
+    border-color: var(--second-color);
+}
+.licensia{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.licensia--text{
+    margin-left: 8px;
+}
+.licensia a{
+    text-decoration: underline;
+    color: var(--second-color);
+}

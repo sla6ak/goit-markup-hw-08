@@ -1,0 +1,64 @@
+.comando{
+    background-color: var(--team-color);
+}
+.portrets{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+.portrets--card{
+    background-color: var(--fon-color);
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    flex-basis: calc(100%/4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.portret--text{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.portrets--title{
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--streng-black);
+    margin-bottom: 10px;
+}
+.profesional{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: var(--p-color);
+}
+.go-go-link-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--fon-color);
+    border-radius: 50%;
+    color: var(--borders-svg);
+    transition-property: color, background-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.go-go-link-svg:hover,
+.go-go-link-svg:focus{
+    background-color: var(--second-color);
+    color: var(--fon-color);
+}
+.go-go-svg{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,27 @@
+// нормализатор скачал чтоб лучше его изучить
+@import '../sass/utilits/normalize';
+// хранилище переменных
+@import '../sass/utilits/variables';
+/* общие стили всех страничек */
+@import '../sass/utilits/general';
+/* *************стили для шапки на всех страницах************* */
+@import '../sass/layout/heder';
+/* ****************стили для подвала на всех страницах************ */
+@import '../sass/layout/footer';
+/* стили только для главной странички */
+@import '../sass/components/title';
+/* общие стили главной странички */
+/* основная секция с кнопкой */
+@import '../sass/layout/section-hero';
+/* секция преимуществ */
+@import '../sass/layout/section-best';
+/* секция чем мы заняты*/
+@import '../sass/layout/section-whats-up';
+/* секция портретов */
+@import '../sass/layout/section-portrets';
+/* раздел с клиентами */
+@import '../sass/layout/section-clients';
+/* модальное окно на главной страничке */
+@import '../sass/layout/modal';
+/* стили только для портфолио */
+@import '../sass/layout/section-portfolio';

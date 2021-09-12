@@ -1,0 +1,39 @@
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.clients-li-svg{
+    display: block;
+    flex-basis: calc(100%/6 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.clients-li-svg+.clients-li-svg{
+    /* margin-left: 30px; */
+}
+.clients-link-svg{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--borders-svg);
+    border: 1px solid var(--borders-svg);
+    border-radius: 4px;
+    transition-property: color, border-color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+}
+.clients-link-svg:hover,
+.clients-link-svg:focus{
+    color: var(--second-color);
+    border-color: var(--second-color);
+}
+.clients-svg{
+    fill: currentColor;
+    width: 106px;
+    height: 60px;
+    
+}
