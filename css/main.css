@@ -214,6 +214,16 @@ html {
   color: var(--second-color);
 }
 
+._main--title2 {
+  color: var(--streng-black);
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+  margin-bottom: 50px;
+}
+
 ._logo {
   font-family: Raleway;
   font-weight: bold;
@@ -228,7 +238,7 @@ html {
 .general__button {
   min-width: 200px;
   max-height: 50px;
-  color: var(--fon-color);
+  color: #ffffff;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 28px;
@@ -247,7 +257,7 @@ html {
   letter-spacing: 0.06em;
   align-items: center;
   border-radius: 4px;
-  background-color: var(--second-color);
+  background-color: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -495,17 +505,6 @@ html {
   margin-left: 10px;
 }
 
-/* стили только для главной странички */
-.title2 {
-  color: var(--streng-black);
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  line-height: 1.3;
-  margin-bottom: 50px;
-}
-
 /* общие стили главной странички */
 /* основная секция с кнопкой */
 .hero {
@@ -533,7 +532,7 @@ html {
 }
 
 /* секция преимуществ */
-.we--about {
+.best__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,14 +542,41 @@ html {
   margin-left: -30px;
 }
 
-.we--puncts {
+.best__why {
   -ms-flex-preferred-size: calc(100%/4 - 30px);
       flex-basis: calc(100%/4 - 30px);
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.we--title {
+.best__why::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  display: block;
+  background-color: var(--background-we);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.why1::before {
+  background-image: url(../images/antenna.png);
+}
+
+.why2::before {
+  background-image: url(../images/clock.png);
+}
+
+.why3::before {
+  background-image: url(../images/diagram.png);
+}
+
+.why4::before {
+  background-image: url(../images/astronaut.png);
+}
+
+.best__why--title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
@@ -560,55 +586,7 @@ html {
   margin-bottom: 10px;
 }
 
-.we--puncts1::before {
-  display: inline-block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--background-we);
-  background-image: url(../images/antenna.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.we--puncts2::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--background-we);
-  background-image: url(../images/clock.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.we--puncts3::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--background-we);
-  background-image: url(../images/diagram.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.we--puncts4::before {
-  display: block;
-  content: "";
-  width: 270px;
-  height: 120px;
-  background-color: var(--background-we);
-  background-image: url(../images/astronaut.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.we--about--text {
+.best__why--text {
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;
@@ -618,19 +596,19 @@ html {
 }
 
 /* секция чем мы заняты*/
-.photo {
+.whats-up {
   padding-bottom: 94px;
 }
 
-.pictures--work {
+.whats-up__li {
   position: relative;
 }
 
-.pictures--work + .pictures--work {
+.whats-up__li + .whats-up__li {
   margin-left: 30px;
 }
 
-.pictures--work__about {
+.whats-up__li--about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +622,7 @@ html {
   width: 100%;
   height: 70px;
   bottom: 0;
-  color: var(--fon-color);
+  color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   font-style: normal;
   font-weight: 600;
@@ -655,7 +633,7 @@ html {
   text-transform: uppercase;
 }
 
-.pictures {
+.whats-up__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

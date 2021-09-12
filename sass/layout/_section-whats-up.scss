@@ -1,13 +1,13 @@
-.photo{
+.whats-up{
     padding-bottom: 94px;
 }
-.pictures--work{
+.whats-up__li{
     position: relative;
 }
-.pictures--work + .pictures--work{
+.whats-up__li + .whats-up__li{
     margin-left: 30px;
 }
-.pictures--work__about{
+.whats-up__li--about{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     width: 100%;
     height: 70px;
     bottom: 0;
-    color: var(--fon-color);
+    color: $color-lite-text;
     background: rgba(47, 48, 58, 0.8);
     font-style: normal;
     font-weight: 600;
@@ -25,6 +25,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.pictures{
+.whats-up__list{
     display: flex;
 }

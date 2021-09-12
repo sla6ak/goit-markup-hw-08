@@ -1,15 +1,37 @@
-.we--about{
+.best__list{
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
 }
-.we--puncts{
+.best__why{
     flex-basis: calc(100%/4 - 30px);
     margin-top: 30px;
     margin-left: 30px;
 }
-.we--title{
+.best__why::before{
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color: var(--background-we);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+.why1::before {
+    background-image: url(../images/antenna.png);
+}
+.why2::before {
+    background-image: url(../images/clock.png);
+}
+.why3::before {
+    background-image: url(../images/diagram.png);
+}
+.why4::before {
+    background-image: url(../images/astronaut.png);
+}
+.best__why--title{
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
@@ -18,52 +40,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-.we--puncts1::before {
-    display: inline-block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    background-color: var(--background-we);
-    background-image: url(../images/antenna.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-.we--puncts2::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    background-color: var(--background-we);
-    background-image: url(../images/clock.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-.we--puncts3::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    background-color: var(--background-we);
-    background-image: url(../images/diagram.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-.we--puncts4::before {
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    background-color: var(--background-we);
-    background-image: url(../images/astronaut.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-
-.we--about--text{
+.best__why--text{
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
