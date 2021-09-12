@@ -141,16 +141,7 @@ summary {
   --cubik-transform: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* это полезная подготовка перед стилизацией */
-/* *************************************************** */
 /* общие стили всех страничек */
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* по умолчанию центрируем все элементы на сайте */
-/* также сбрасывает марджины у заголовков */
 *,
 *::before,
 *::after {
@@ -178,7 +169,7 @@ li {
   list-style-type: none;
 }
 
-.conteiner {
+._conteiner {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -203,11 +194,72 @@ body {
   font-size: 0;
 }
 
-/* *************************************************** */
-/* все цвета на всех страничках */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.metamorphosis {
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: var(--time-animation);
+          transition-duration: var(--time-animation);
+  -webkit-transition-timing-function: var(--cubik-transform);
+          transition-timing-function: var(--cubik-transform);
+  text-decoration: none;
+}
+
+.metamorphosis:hover,
+.metamorphosis:focus {
+  color: var(--second-color);
+}
+
+._logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: #000000;
+  display: block;
+  margin-right: 93px;
+}
+
+.general__button {
+  min-width: 200px;
+  max-height: 50px;
+  color: var(--fon-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 0.06em;
+  align-items: center;
+  border-radius: 4px;
+  background-color: var(--second-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border: 0px;
+}
+
 /* *************стили для шапки на всех страницах************* */
-/* центруем шапку по горизонтали */
-.top {
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +271,7 @@ body {
 }
 
 /* логотип +ссылки по страницам */
-.top--nav {
+.heder__navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,81 +280,61 @@ body {
           align-items: center;
 }
 
-.logo {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.3;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  display: block;
-  margin-right: 93px;
-}
-
-.top-logo {
+.heder__navigation--logo {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.logo span {
-  color: var(--second-color);
+._logo span {
+  color: #2196F3;
 }
 
-.top--nav--pages {
+.navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav--pages + .nav--pages {
+.navigation__li + .navigation__li {
   margin-left: 30px;
 }
 
-.notactive {
-  color: var(--main-color);
+.navigation__li--pages {
+  color: #000000;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-/* active-alltime обязательно ниже notactive */
-.active-alltime {
-  color: var(--second-color);
-  position: relative;
-}
-
-.active-alltime::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  background-color: var(--second-color);
-}
-
-.top--nav--pages .hover {
+.navigation__li--pages {
   font-weight: 500;
   line-height: 1.2;
   font-size: 14px;
   letter-spacing: 0.02em;
 }
 
-/* ссылки на телефон */
-.top--address {
+/* active-alltime обязательно ниже navigation__li--pages */
+._active-alltime {
+  color: #2196F3;
+  position: relative;
+}
+
+._active-alltime::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: #2196F3;
+}
+
+/* ссылки на почту и телефон */
+.heder__list-address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
-}
-
-.top--address li + li {
-  margin-left: 50px;
-}
-
-.top--address .hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -310,55 +342,44 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.list-adress li + li {
+  margin-left: 50px;
+}
+
+.list-adress__link--link {
   font-size: 14px;
   line-height: auto;
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: var(--p-color);
+  color: #757575;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.hover {
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: var(--time-animation);
-          transition-duration: var(--time-animation);
-  -webkit-transition-timing-function: var(--cubik-transform);
-          transition-timing-function: var(--cubik-transform);
-}
-
-.hover:hover,
-.hover:focus {
-  color: var(--second-color);
-}
-
-.top--address-svg1 {
+.list-adress__link--svg1 {
   width: 16px;
   height: 12px;
   fill: currentColor;
   margin-right: 10px;
 }
 
-.top--address-svg2 {
+.list-adress__link--svg2 {
   width: 10px;
   height: 16px;
   fill: currentColor;
   margin-right: 10px;
 }
 
-.start {
-  border-bottom: 1px solid var(--border-color);
-}
-
 /* ****************стили для подвала на всех страницах************ */
-.bottom--info {
-  background-color: var(--ground-color);
-  color: var(--fon-color);
+.footer {
+  background-color: #2f303a;
+  color: #ffffff;
   padding: 60px 0px;
 }
 
-.bottom--info > .conteiner {
+.footer__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,11 +390,16 @@ body {
       flex-wrap: wrap;
 }
 
-.bottom--info .logo {
-  color: var(--fon-color);
+.footer ._logo {
+  color: #ffffff;
+  margin-right: auto;
 }
 
-.adress--city {
+.footer__adress {
+  margin-top: 20px;
+}
+
+.footer__list-adress {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -382,15 +408,11 @@ body {
   font-weight: 400;
 }
 
-.bottom--address {
-  margin-top: 20px;
-}
-
-ul .address--write:not(:last-child) {
+.footer__list-adress li:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.bottom--address--link {
+.footer__list-adress--link {
   color: var(--rgba-color);
   font-size: 14px;
   line-height: 1.7;
@@ -400,22 +422,11 @@ ul .address--write:not(:last-child) {
   font-weight: 400;
 }
 
-.bottom--info .logo {
-  margin-right: auto;
-}
-
-.go-go {
+.footer__go-go {
   margin-left: 70px;
 }
 
-.go-go--sabmit {
-  -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-          flex-grow: 2;
-  margin-left: 93px;
-}
-
-.go-go--title {
+.footer__go-go--title {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -425,60 +436,32 @@ ul .address--write:not(:last-child) {
   text-transform: uppercase;
 }
 
-.go-go--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 20px;
-}
-
-.go-go-li-svg + .go-go-li-svg {
-  margin-left: 10px;
-}
-
-.bottom-link-svg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 44px;
-  height: 44px;
+.footer__go-list .go-list__li--link {
   background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  color: var(--fon-color);
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: var(--time-animation);
-          transition-duration: var(--time-animation);
-  -webkit-transition-timing-function: var(--cubik-transform);
-          transition-timing-function: var(--cubik-transform);
+  color: #ffffff;
 }
 
-.bottom-link-svg:hover,
-.bottom-link-svg:focus {
-  background-color: var(--second-color);
-}
-
-.bottom-svg {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
+.footer__go-list .go-list__li--link:hover,
+.footer__go-list .go-list__li--link:focus {
+  background-color: #2196F3;
 }
 
 /* стили для третьей колонки подвала */
-.botton--form {
+.footer__sabmit {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  margin-left: 93px;
+}
+
+.footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.bottom--email {
+.footer__form--email {
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -490,7 +473,7 @@ ul .address--write:not(:last-child) {
   background-color: transparent;
   margin-right: 12px;
   padding: 15px 16px;
-  color: var(--fon-color);
+  color: #ffffff;
   outline: none;
   -webkit-transition-property: border;
   transition-property: border;
@@ -500,12 +483,12 @@ ul .address--write:not(:last-child) {
           transition-timing-function: var(--cubik-transform);
 }
 
-.bottom--email:hover,
-.bottom--email:focus {
-  border: 1px solid var(--second-color);
+.footer__form--email:hover,
+.footer__form--email:focus {
+  border: 1px solid #2196F3;
 }
 
-.submit-svg {
+.footer__form--icon {
   fill: currentColor;
   width: 24px;
   height: 24px;
@@ -547,35 +530,6 @@ ul .address--write:not(:last-child) {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
-
-.hero__button {
-  min-width: 200px;
-  max-height: 50px;
-  color: var(--fon-color);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 28px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: bold;
-  letter-spacing: 0.06em;
-  align-items: center;
-  border-radius: 4px;
-  background-color: var(--second-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  border: 0px;
 }
 
 /* секция преимуществ */
@@ -663,7 +617,7 @@ ul .address--write:not(:last-child) {
   color: var(--p-color);
 }
 
-/* секция фотографий*/
+/* секция чем мы заняты*/
 .photo {
   padding-bottom: 94px;
 }
@@ -759,7 +713,18 @@ ul .address--write:not(:last-child) {
   color: var(--p-color);
 }
 
-.go-go-link-svg {
+.go-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.go-list__li + .go-list__li {
+  margin-left: 10px;
+}
+
+.go-list__li--link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,24 +736,23 @@ ul .address--write:not(:last-child) {
           align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--fon-color);
   border-radius: 50%;
-  color: var(--borders-svg);
+  color: #afb1b8;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
-  -webkit-transition-duration: var(--time-animation);
-          transition-duration: var(--time-animation);
-  -webkit-transition-timing-function: var(--cubik-transform);
-          transition-timing-function: var(--cubik-transform);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.go-go-link-svg:hover,
-.go-go-link-svg:focus {
-  background-color: var(--second-color);
-  color: var(--fon-color);
+.go-list__li--link:hover,
+.go-list__li--link:focus {
+  background-color: #2196F3;
+  color: #ffffff;
 }
 
-.go-go-svg {
+.go-list__li--icon {
   fill: currentColor;
   width: 20px;
   height: 20px;
@@ -853,7 +817,6 @@ ul .address--write:not(:last-child) {
 }
 
 /* модальное окно на главной страничке */
-/* задаю по умолчанию опасити1 чтоб анимировать его при появлении */
 .modal {
   position: fixed;
   width: 100%;

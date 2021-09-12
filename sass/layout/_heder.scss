@@ -1,107 +1,88 @@
-.top{
+.header{
+    border-bottom: 1px solid  $color-border-heder;
+}
+.header__conteiner{
     display: flex;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
 }
 /* логотип +ссылки по страницам */
-.top--nav{
+.heder__navigation{
     display: flex;
     align-items: center;
 }
-.logo{
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.3;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    display: block;
-    margin-right: 93px;
-}
-.top-logo{
+.heder__navigation--logo{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.logo span{
-    color: var(--second-color);
+._logo span{
+    color: $color-style;
 }
-.top--nav--pages{
+.navigation__list{
     display: flex;
 }
-.nav--pages + .nav--pages{
+.navigation__li + .navigation__li{
     margin-left: 30px;
 }
-.notactive{
-    color: var(--main-color);
+.navigation__li--pages{
+    color: $general-text;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    
 }
 
-/* active-alltime обязательно ниже notactive */
-.active-alltime{
-    color: var(--second-color);
+.navigation__li--pages{
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+/* active-alltime обязательно ниже navigation__li--pages */
+// подчеркивание ссылки текущей страницы
+._active-alltime{
+    color: $color-style;
     position: relative;
 }
-.active-alltime::after{
+._active-alltime::after{
     content: "";
     width: 100%;
     height: 4px;
     position: absolute;
     bottom: -1px;
     left: 0;
-    background-color: var(--second-color);
+    background-color: $color-style;
 }
-.top--nav--pages .hover{
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-}
-/* ссылки на телефон */
-.top--address{
+/* ссылки на почту и телефон */
+.heder__list-address{
     display: flex;
     margin-left: auto;
-}
-.top--address li+li{
-    margin-left: 50px;
-}
-.top--address .hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.list-adress li+li{
+    margin-left: 50px;
+}
+.list-adress__link--link{
     font-size: 14px;
     line-height: auto;
     font-weight: 500;
     letter-spacing: 0.02em;
-    color: var(--p-color);
+    color: $color-paragraph;
     padding-top: 32px;
     padding-bottom: 32px;
-  
 }
-.hover{
-    transition-property: color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
-}
-.hover:hover,
-.hover:focus{
-    color: var(--second-color);
-}
-.top--address-svg1{
+// стилизация свг
+.list-adress__link--svg1{
     width: 16px;
     height: 12px;
     fill: currentColor;
     margin-right: 10px;
 }
-.top--address-svg2{
+.list-adress__link--svg2{
     width: 10px;
     height: 16px;
     fill: currentColor;
     margin-right: 10px;
-}
-.start{
-    border-bottom: 1px solid var(--border-color);
 }

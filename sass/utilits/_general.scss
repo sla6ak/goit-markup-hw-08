@@ -20,7 +20,7 @@ a{
 li{
     list-style-type: none;
 }
-.conteiner{
+._conteiner{
     max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -43,4 +43,14 @@ li{
 }
 html{
     box-sizing: border-box;
+}
+.metamorphosis{
+    transition-property: color;
+    transition-duration: var(--time-animation);
+    transition-timing-function: var(--cubik-transform);
+    text-decoration: none;
+}
+.metamorphosis:hover,
+.metamorphosis:focus{
+    color: var(--second-color);
 }

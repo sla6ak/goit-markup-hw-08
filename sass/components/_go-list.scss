@@ -1,0 +1,29 @@
+.go-list{
+    display: flex;
+    margin-top: 20px;
+}
+.go-list__li+.go-list__li{
+    margin-left: 10px;
+}
+.go-list__li--link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $color-main_icon;
+    transition-property: color, background-color;
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
+}
+.go-list__li--link:hover,
+.go-list__li--link:focus{
+    background-color: $color-style;
+    color: $color-lite-text;
+}
+.go-list__li--icon{
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}

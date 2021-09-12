@@ -39,26 +39,3 @@
     letter-spacing: 0.03em;
     color: var(--p-color);
 }
-.go-go-link-svg{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background-color: var(--fon-color);
-    border-radius: 50%;
-    color: var(--borders-svg);
-    transition-property: color, background-color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
-}
-.go-go-link-svg:hover,
-.go-go-link-svg:focus{
-    background-color: var(--second-color);
-    color: var(--fon-color);
-}
-.go-go-svg{
-    fill: currentColor;
-    width: 20px;
-    height: 20px;
-}

@@ -4,6 +4,8 @@
 @import '../sass/utilits/variables';
 /* общие стили всех страничек */
 @import '../sass/utilits/general';
+@import '../sass/components/logo';
+@import '../sass/components/general-button';
 /* *************стили для шапки на всех страницах************* */
 @import '../sass/layout/heder';
 /* ****************стили для подвала на всех страницах************ */
@@ -19,6 +21,7 @@
 @import '../sass/layout/section-whats-up';
 /* секция портретов */
 @import '../sass/layout/section-portrets';
+@import '../sass/components/go-list';
 /* раздел с клиентами */
 @import '../sass/layout/section-clients';
 /* модальное окно на главной страничке */

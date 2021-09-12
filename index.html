@@ -12,35 +12,35 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="start">
-        <div class="top conteiner">
-            <nav class="top--nav">
+    <header class="header">
+        <div class="header__conteiner _conteiner">
+            <nav class="heder__navigation navigation">
                 <!-- этот логотип навигационная ссылка -->
-                <a href="#" id="link-header" class="logo top-logo"><span>Web</span>Studio</a>
-                <ul class="top--nav--pages">
-                    <li class="nav--pages">
-                        <a href="#" class=" hover notactive active-alltime">Студия</a>
+                <a href="#" id="link-header" class="heder__navigation--logo _logo"><span>Web</span>Studio</a>
+                <ul class="navigation__list">
+                    <li class="navigation__li">
+                        <a href="#" class="navigation__li--pages metamorphosis _active-alltime">Студия</a>
                     </li>
-                    <li class="nav--pages">
-                        <a  href="./portfolio.html" class="hover notactive">Портфолио</a>
+                    <li class="navigation__li">
+                        <a  href="./portfolio.html" class="navigation__li--pages metamorphosis">Портфолио</a>
                     </li>
-                    <li class="nav--pages">
-                        <a href="#" class="hover notactive">Контакты</a>
+                    <li class="navigation__li">
+                        <a href="#" class="navigation__li--pages metamorphosis">Контакты</a>
                     </li>
                     
                 </ul>
             </nav>
-            <ul class="top--address">
-                <li class="top--adress--li">
-                    <a href="mailto:info@devstudio.com" class="hover top--adress--link">
-                        <svg class="top--address-svg1"><use href="./images/svg/symbol-defs.svg#icon-envelope">
+            <ul class="heder__list-address list-adress">
+                <li class="list-adress__link">
+                    <a href="mailto:info@devstudio.com" class="list-adress__link--link metamorphosis">
+                        <svg class="list-adress__link--svg1"><use href="./images/svg/symbol-defs.svg#icon-envelope">
                         </use></svg>
                         <span>info@devstudio.com</span>
                     </a>
                 </li>
-                <li class="top--adress--li">
-                    <a href="tel:+380961111111" class="hover top--telephon--link">
-                        <svg class="top--address-svg2"><use href="./images/svg/symbol-defs.svg#icon-smartphone">
+                <li class="list-adress__link">
+                    <a href="tel:+380961111111" class="list-adress__link--link metamorphosis">
+                        <svg class="list-adress__link--svg2"><use href="./images/svg/symbol-defs.svg#icon-smartphone">
                         </use></svg>
                         <span>+38 096 111 11 11</span>
                     </a>
@@ -51,10 +51,10 @@
     <main class="main">
         <section class="hero">
             <h1 class="hero--idea">Эффективные решения<br>для вашего бизнеса</h1>
-            <button data-modal-open class="hero__button data-modal-open" type="button">Заказать услугу</button>
+            <button data-modal-open class="general__button data-modal-open" type="button">Заказать услугу</button>
         </section>
         <section class="section we">
-            <div class="conteiner">
+            <div class="_conteiner">
                 <!-- симантический подзоголовок как говорил Саша Репета -->
                 <h2 class="none" style="color: var(--fon-color); font-size: 1px;">Особенности</h2>
                 <ul class="we--about">
@@ -78,7 +78,7 @@
             </div>
         </section>
         <section class="photo">
-            <div class="conteiner">
+            <div class="_conteiner">
                 <h2 class="title2">Чем мы занимаемся</h2>
                 <ul class="pictures"> 
                     <li class="pictures--work">
@@ -97,7 +97,7 @@
             </div>
         </section>
         <section class="comando section">
-            <div class=" conteiner">
+            <div class="_conteiner">
                 <h2 class="title2">Наша команда</h2>
                 <ul class="portrets">
                     <li class="portrets--card">
@@ -105,34 +105,34 @@
                         <div class="portret--text">
                         <h3 class="portrets--title">Игорь Демьяненко</h3>
                         <p class="profesional">Product Designer</p>
-                        <ul class="go-go--list">
-                            <li class="go-go-li-svg">
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg" >
+                        <ul class="go-list">
+                            <li class="go-list__li">
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-instagram-2">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-Group">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg" >
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-facebook-1">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-linkedin-1">
                                         </use>
                                     </svg>
@@ -146,34 +146,34 @@
                         <div class="portret--text">
                         <h3 class="portrets--title">Ольга Репина</h3>
                         <p class="profesional">Frontend Developer</p>
-                        <ul class="go-go--list">
-                            <li class="go-go-li-svg">
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg" >
+                        <ul class="go-list">
+                            <li class="go-list__li">
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon" >
                                         <use href="./images/svg/symbol-defs.svg#icon-instagram-2">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-Group">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg" >
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-facebook-1">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-linkedin-1">
                                         </use>
                                     </svg>
@@ -187,34 +187,34 @@
                         <div class="portret--text">
                         <h3 class="portrets--title">Николай Тарасов</h3>
                         <p class="profesional">Marketing</p>
-                        <ul class="go-go--list">
-                            <li class="go-go-li-svg">
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="bottom-svg" >
+                        <ul class="go-list">
+                            <li class="go-list__li">
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-instagram-2">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-Group">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg" >
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon" >
                                         <use href="./images/svg/symbol-defs.svg#icon-facebook-1">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-linkedin-1">
                                         </use>
                                     </svg>
@@ -228,34 +228,34 @@
                         <div class="portret--text">
                         <h3 class="portrets--title">Михаил Ермаков</h3>
                         <p class="profesional">UI Designer</p>
-                        <ul class="go-go--list">
-                            <li class="go-go-li-svg">
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg" >
+                        <ul class="go-list">
+                            <li class="go-list__li">
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon" >
                                         <use href="./images/svg/symbol-defs.svg#icon-instagram-2">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-Group">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg" >
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-facebook-1">
                                         </use>
                                     </svg>
                                 </a>
                             </li>
-                            <li class="go-go-li-svg"> 
-                                <a href="" class="go-go-link-svg">
-                                    <svg class="go-go-svg">
+                            <li class="go-list__li"> 
+                                <a href="" class="go-list__li--link">
+                                    <svg class="go-list__li--icon">
                                         <use href="./images/svg/symbol-defs.svg#icon-linkedin-1">
                                         </use>
                                     </svg>
@@ -268,7 +268,7 @@
             </div>
         </section>
         <section class="section">
-            <div class="conteiner">
+            <div class="_conteiner">
                 <h2  class="title2">
                     Постоянные клиенты
                 </h2>
@@ -320,53 +320,53 @@
             </div>
         </section>
     </main>
-    <footer class="bottom--info">
-        <div class="conteiner">
+    <footer class="footer">
+        <div class="footer__conteiner _conteiner">
             <div>
             <!-- это логотип сайта он ведет на начало главной страницы -->
-                <a href="#link-header" class="logo"><span>Web</span>Studio</a>
-                <address class="bottom--address">
-                    <ul>
-                        <li class="adress--city address--write">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="address--write">
-                            <a class="bottom--address--link hover" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a href="./index.html" class="_logo"><span>Web</span>Studio</a>
+                <address class="footer__adress">
+                    <ul class="footer__list-adress">
+                        <li class="footer__list-adress--city">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li class="">
+                            <a class="footer__list-adress--link metamorphosis" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
-                        <li class="address--write">
-                            <a class="bottom--address--link hover" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="">
+                            <a class="footer__list-adress--link metamorphosis" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
-            <div class="go-go">
-                <h3 class="go-go--title">Присоединяйтесь</h3>
-                <ul class="go-go--list">
-                    <li class="go-go-li-svg">
-                        <a href="" class="bottom-link-svg">
-                            <svg class="bottom-svg" >
+            <div class="footer__go-go">
+                <p class="footer__go-go--title">Присоединяйтесь</p>
+                <ul class="footer__go-list go-list">
+                    <li class="go-list__li">
+                        <a href="" class="go-list__li--link">
+                            <svg class="go-list__li--icon">
                                 <use href="./images/svg/symbol-defs.svg#icon-instagram-2">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="go-go-li-svg"> 
-                        <a href="" class="bottom-link-svg">
-                            <svg class="bottom-svg">
+                    <li class="go-list__li"> 
+                        <a href="" class="go-list__li--link ">
+                            <svg class="go-list__li--icon">
                                 <use href="./images/svg/symbol-defs.svg#icon-Group">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="go-go-li-svg"> 
-                        <a href="" class="bottom-link-svg">
-                            <svg class="bottom-svg" >
+                    <li class="go-list__li"> 
+                        <a href="" class="go-list__li--link ">
+                            <svg class="go-list__li--icon">
                                 <use href="./images/svg/symbol-defs.svg#icon-facebook-1">
                                 </use>
                             </svg>
                         </a>
                     </li>
-                    <li class="go-go-li-svg"> 
-                        <a href="" class="bottom-link-svg">
-                            <svg class="bottom-svg">
+                    <li class="go-list__li"> 
+                        <a href="" class="go-list__li--link ">
+                            <svg class="go-list__li--icon">
                                 <use href="./images/svg/symbol-defs.svg#icon-linkedin-1">
                                 </use>
                             </svg>
@@ -375,12 +375,12 @@
                 </ul>
                
             </div>
-            <div class="go-go--sabmit" >
-                <h3 class="go-go--title">Подпишитесь на рассылку</h3>
-                <form action="#" class="botton--form">
-                    <input type="email" class="bottom--email" name="email" required placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                    <button type="submit" class="hero__button">Подписаться
-                        <svg class="submit-svg" >
+            <div class="footer__sabmit">
+                <b class="footer__go-go--title">Подпишитесь на рассылку</b>
+                <form action="#" class="footer__form">
+                    <input type="email" class="footer__form--email" name="email" required placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <button type="submit" class="general__button">Подписаться
+                        <svg class="footer__form--icon" >
                             <use href="./images/svg/symbol-defs.svg#icon-icon-send">
                             </use>
                         </svg>
@@ -424,7 +424,7 @@
                     <label for="selected" class="check--licensia">Соглашаюсь с рассылкой и принимаю</label>
                     <a href="">Условия договора</a>
                 </div>
-                <button type="submit" class="hero__button">Отправить</button>
+                <button type="submit" class="general__button">Отправить</button>
             </form>
         </div>
     </div>
