@@ -1,18 +1,16 @@
 :root{
-    --main-color: #000000;
     --rgba-color: rgba(255,255,255,0.5);
     --streng-black:#212121;
     --p-color: #757575;
-    --team-color: #f5f4fa;
     --ground-color: #2f303a;
     --fon-color: #ffffff; 
     --second-color: #2196F3;
     --border-color: #eeeeee;
-    --background-we: #f5f4fa;
     --borders-svg: #afb1b8;
     --time-animation: 250ms;
     --cubik-transform: cubic-bezier(0.4, 0, 0.2, 1);
     }
+    // цвета
     $color-style: #2196F3;
     $color-paragraph: #757575;
     $general-text: #000000;
@@ -20,8 +18,12 @@
     $color-main_icon: #afb1b8;
     $color-baground: #2f303a;
     $color-lite-text: #ffffff;
-    $time-animation: 250ms;
-    $cubik-transform: cubic-bezier(0.4, 0, 0.2, 1);
     $color-bagraund_section: #f5f4fa;
     $color-fon_cards: #ffffff;
     $color-text_cards:#212121;
+    $color-icon_partners:#afb1b8;
+    // анимации
+    $time-animation: 250ms;
+    $cubik-transform: cubic-bezier(0.4, 0, 0.2, 1);
+    // значения
+    $best: 'antenna', 'clock', 'diagram', 'astronaut';

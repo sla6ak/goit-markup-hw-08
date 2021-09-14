@@ -1,39 +1,35 @@
-.clients{
+.clients__list{
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
 }
-.clients-li-svg{
+.clients__li{
     display: block;
     flex-basis: calc(100%/6 - 30px);
     margin-top: 30px;
     margin-left: 30px;
 }
-.clients-li-svg+.clients-li-svg{
-    /* margin-left: 30px; */
-}
-.clients-link-svg{
+.clients__li--link{
     width: 170px;
     height: 92px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--borders-svg);
-    border: 1px solid var(--borders-svg);
+    color: $color-icon_partners;
+    border: 1px solid $color-icon_partners;
     border-radius: 4px;
     transition-property: color, border-color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function:$cubik-transform;
 }
-.clients-link-svg:hover,
-.clients-link-svg:focus{
-    color: var(--second-color);
-    border-color: var(--second-color);
+.clients__li--link:hover,
+.clients__li--link:focus{
+    color: $color-style;
+    border-color: $color-style;
 }
-.clients-svg{
+.clients__li--icon{
     fill: currentColor;
     width: 106px;
     height: 60px;
-    
 }

@@ -46,16 +46,17 @@ html{
 }
 .metamorphosis{
     transition-property: color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
     text-decoration: none;
+    &:hover,
+    &:focus{
+    color: $color-style;
+    }
 }
-.metamorphosis:hover,
-.metamorphosis:focus{
-    color: var(--second-color);
-}
+
 ._main--title2{
-    color: var(--streng-black);
+    color: $color-text_cards;
     text-align: center;
     font-weight: 700;
     font-size: 36px;

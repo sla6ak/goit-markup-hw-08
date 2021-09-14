@@ -3,9 +3,8 @@
 }
 .header__conteiner{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
 }
 /* логотип +ссылки по страницам */
 .heder__navigation{
@@ -16,55 +15,54 @@
     padding-top: 24px;
     padding-bottom: 24px;
 }
-._logo span{
-    color: $color-style;
-}
+
 .navigation__list{
     display: flex;
+    flex-wrap: wrap;
 }
 .navigation__li + .navigation__li{
     margin-left: 30px;
 }
-.navigation__li--pages{
+.navigation__pages{
     color: $general-text;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-
-.navigation__li--pages{
     font-weight: 500;
     line-height: 1.2;
     font-size: 14px;
     letter-spacing: 0.02em;
+    &--active-alltime{
+        color: $color-style;
+        position: relative;
+        // подчеркивание ссылки текущей страницы
+        &::after{
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            background-color: $color-style;
+        }
+    }
 }
 /* active-alltime обязательно ниже navigation__li--pages */
-// подчеркивание ссылки текущей страницы
-._active-alltime{
-    color: $color-style;
-    position: relative;
-}
-._active-alltime::after{
-    content: "";
-    width: 100%;
-    height: 4px;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    background-color: $color-style;
-}
+
 /* ссылки на почту и телефон */
-.heder__list-address{
+.header__list-address{
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.list-adress li+li{
+.header__list-address .list-adress__li+.list-adress__li{
     margin-left: 50px;
 }
-.list-adress__link--link{
+.list-adress__link{
+    display: block;
     font-size: 14px;
     line-height: auto;
     font-weight: 500;
@@ -72,17 +70,16 @@
     color: $color-paragraph;
     padding-top: 32px;
     padding-bottom: 32px;
-}
-// стилизация свг
-.list-adress__link--svg1{
-    width: 16px;
-    height: 12px;
-    fill: currentColor;
-    margin-right: 10px;
-}
-.list-adress__link--svg2{
-    width: 10px;
-    height: 16px;
-    fill: currentColor;
-    margin-right: 10px;
+    &--svg1{
+        width: 16px;
+        height: 12px;
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    &--svg2{
+        width: 10px;
+        height: 16px;
+        fill: currentColor;
+        margin-right: 10px;
+    }
 }

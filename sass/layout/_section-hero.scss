@@ -4,14 +4,14 @@
     url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: var(--ground-color);
+    background-color: $color-baground;
     padding-top: 200px;
     padding-bottom: 200px;
     margin-right: auto;
     margin-left: auto;
 }
-.hero--idea{
-    color: var(--fon-color);
+.hero__idea{
+    color: $color-lite-text;
     font-size: 44px;
     font-weight: 900;
     text-align: center;

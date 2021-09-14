@@ -7,52 +7,52 @@
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition-property: opacity;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
 }
-.modal.is-hidden{
+.is-hidden{
     opacity: 0;
     pointer-events: none;
 }
-.modal-view{
+.modal__view{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 528px;
     min-height: 581px;
-    background-color: #fff;
+    background-color: $color-fon_cards;
     padding: 40px;
 }
-.modal-close{
+.modal__close{
     position: absolute;
     right: 10px;
     top: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: var(--fon-color);
+    background-color: $color-fon_cards;
     width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    &:hover .modal_icon{
+        fill: $color-style;
+    }
 }
-.modal-close:hover .modal--svg{
-    fill: var(--second-color);
-}
-.modal--svg{
+.modal_icon{
     width: 18px;
     height: 18px;
-    fill: var(--main-color);
+    fill: $general-text;
     transition-property: fill;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
 }
 /* контент модального окна */
 .pleas{
     margin-bottom: 12px;
-    color: var(--streng-black);
+    color: $color-text_cards;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -60,10 +60,10 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
-.form--studio{
+.modal__form{
     display: flex;
     flex-direction: column;
-    color: var(--p-color);
+    color: $color-paragraph;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -81,32 +81,30 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition-property: border-color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
+    &:hover,&:focus{
+        border-color: $color-style;
+    }
+    &:hover~svg,&:focus~svg{
+        fill: $color-style;
+    }
 }
-.input--style:hover,
-.input--style:focus{
-    border-color: var(--second-color);
-}
-.input--style:hover~svg,
-.input--style:focus~svg{
-    fill: var(--second-color);
-}
-.form--input{
+.form__input{
     display: flex;
     flex-direction: column;
     position: relative;
     margin-bottom: 10px;
 }
-.icon--input{
+.icon-input{
     position: absolute;
     left: 12px;
     top: 28px;
 }
-.name--label{
+.form__label{
     margin-bottom: 4px;
 }
-.form--coment{
+.form__coment{
     outline: none;
     padding: 12px 16px;
     margin-bottom: 20px;
@@ -116,14 +114,13 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition-property: border-color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
+    &:hover,&:focus{
+        border-color: $color-style;
+    }
 }
-.form--coment:hover,
-.form--coment:focus{
-    border-color: var(--second-color);
-}
-.check--svg{
+.check_icon{
     display: block;
     position: absolute;
     left: 0;
@@ -132,44 +129,42 @@
     height: 15px;
     opacity: 0;
     transition-property: opacity;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
     pointer-events: none;
 }
+// этот клас добавляет js для появления кастомной иконки
 .agrey{
     opacity: 1;
 }
-/* .check{
-    display: none;
-} */
-.check--licensia{
+// ***********************************************
+.check__licensia{
     display: flex;
     align-items: center;
     margin-right: 4px;
     cursor: pointer;
+    &::before{
+        content: "";
+        display: block;
+        width: 16px;
+        height: 15px;
+        border: 1px solid $general-text;
+        border-radius: 2px;
+        margin-right: 8px;
+        transition-property: border-color;
+        transition-duration: $time-animation;
+        transition-timing-function: $cubik-transform;
+    }
+    &:hover::before,&:focus::before{
+        border-color: $color-style;
+    }
 }
-.check--licensia::before{
-    content: "";
-    display: block;
-    width: 16px;
-    height: 15px;
-    border: 1px solid var(--main-color);
-    border-radius: 2px;
-    margin-right: 8px;
-    transition-property: border-color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+// этот код заставляет таб работать на бефоре
+.check_input:hover~.check__licensia::before,
+.check_input:focus~.check__licensia::before{
+    border-color: $color-style;
 }
-
-.check--licensia:hover::before,
-.check--licensia:focus::before{
-    border-color: var(--second-color);
-}
-.check:hover~.check--licensia::before,
-.check:focus~.check--licensia::before{
-    border-color: var(--second-color);
-}
-.licensia{
+.form__licensia{
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -181,10 +176,7 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
 }
-.licensia--text{
-    margin-left: 8px;
-}
-.licensia a{
+.form__licensia a{
     text-decoration: underline;
-    color: var(--second-color);
+    color: $color-style;
 }
