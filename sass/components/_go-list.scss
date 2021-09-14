@@ -5,7 +5,7 @@
 .go-list__li+.go-list__li{
     margin-left: 10px;
 }
-.go-list__li--link{
+.go-list__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,13 +16,12 @@
     transition-property: color, background-color;
     transition-duration: $time-animation;
     transition-timing-function: $cubik-transform;
+    &:hover,&:focus{
+        background-color: $color-style;
+        color: $color-lite-text;
+    }
 }
-.go-list__li--link:hover,
-.go-list__li--link:focus{
-    background-color: $color-style;
-    color: $color-lite-text;
-}
-.go-list__li--icon{
+.go-list__link_icon{
     fill: currentColor;
     width: 20px;
     height: 20px;

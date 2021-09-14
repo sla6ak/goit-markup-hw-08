@@ -4,14 +4,15 @@
     flex-direction: column;
 }
 /* стили для кнопок */
-.portfolio--menu{
+.portfolio__menu{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.filter {
+.menu__filter-button {
+    margin: 0px 4px 0px 4px;
     padding: 6px 20px;
-    background-color: var(--team-color);
+    background-color: $color-bagraund_section;
     border: 0px;
     border-radius: 4px;
     font-family: Roboto;
@@ -22,27 +23,26 @@
     color: var(--streng-black);
     cursor: pointer;
     transition-property: box-shadow, background-color, color;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
+    &:hover,&:focus{
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
+        background-color: $color-style;
+        color: $color-lite-text;
+    }
 }
-.filter:hover,
-.filter:focus{
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
-    background-color: var(--second-color);
-    color: var(--fon-color);
-}
-.portfolio--filter{
+.menu__filter{
     margin: 0px 4px 0px 4px;
 }
 .filter-down{
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0,0.12);
-    background-color: var(--second-color);
-    color: var(--fon-color);
+    background-color: $color-style;
+    color: $color-lite-text;
 }
 
 /* стилизация ссылок */
 
-.portfolio--works{
+.portfolio__sait{
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -53,23 +53,24 @@
     margin-left: 30px;
     margin-top: 30px;
     box-sizing: border-box;
-    border: 1px solid var(--border-color);
+    border: 1px solid $color-border-heder;
 }
 
-.sait--hover{
+.sait__link{
+    text-decoration: none;
     display: block;
     transition-property: box-shadow;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
+    &:hover,&:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
-.sait--hover:hover, .sait--hover:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.sait--img{
+.sait_img{
     position: relative;
     overflow: hidden;
 }
-.sait--discription{
+.sait__discription{
     position: absolute;
     padding-top: 62px;
     padding-bottom: 62px;
@@ -82,26 +83,27 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 1.56;
-    color: var(--fon-color);
+    color: $color-lite-text;
     background: rgba(33, 150, 243, 0.9);
     letter-spacing: 0.03em;
     transform: translateY(101%);
     transition: transform;
-    transition-duration: var(--time-animation);
-    transition-property: var(--cubik-transform);
-}
-.sait--hover:hover .sait--discription,
-.sait--hover:focus .sait--discription{
+    transition-duration: $time-animation;
+    transition-property: $cubik-transform;
+    .sait__link:hover &,
+    .sait__link:focus &{
     transform: translateY(0);
+    }
 }
-.sait--text{
+
+.sait__text{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
 }
-.sait--title{
-    color: var(--streng-black);
+.sait__title{
+    color: $color-text_cards;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -110,8 +112,8 @@
     font-style: normal;
     margin-bottom: 4px;
 }
-.sait--tipe{
-    color: var(--p-color);
+.sait__tipe{
+    color: $color-paragraph;
     font-size: 16px;
     line-height: 1.7;
     letter-spacing: 0.03em;

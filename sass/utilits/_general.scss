@@ -14,9 +14,6 @@ img{
     width: 100%; 
     height: auto; 
 }
-a{
-    text-decoration: none;
-}
 li{
     list-style-type: none;
 }
@@ -30,6 +27,8 @@ li{
  body{
     font-family: Roboto;
     font-style: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 .section{
     padding-top: 94px;
@@ -54,7 +53,6 @@ html{
     color: $color-style;
     }
 }
-
 ._main--title2{
     color: $color-text_cards;
     text-align: center;

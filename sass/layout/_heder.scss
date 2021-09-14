@@ -62,7 +62,7 @@
     margin-left: 50px;
 }
 .list-adress__link{
-    display: block;
+    display: flex;
     font-size: 14px;
     line-height: auto;
     font-weight: 500;
@@ -70,13 +70,13 @@
     color: $color-paragraph;
     padding-top: 32px;
     padding-bottom: 32px;
-    &--svg1{
+    &-svg1{
         width: 16px;
         height: 12px;
         fill: currentColor;
         margin-right: 10px;
     }
-    &--svg2{
+    &-svg2{
         width: 10px;
         height: 16px;
         fill: currentColor;

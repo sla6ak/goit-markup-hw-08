@@ -27,8 +27,8 @@
 .footer__list-adress li:not(:last-child){
     margin-bottom: 9px;
 }
-.footer__list-adress--link{
-    color: var(--rgba-color);
+.footer__list-adress-link{
+    color: $rgba-adress;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -40,7 +40,7 @@
 .footer__go-go{
     margin-left: 70px;
 }
-.footer__go-go--title{
+.footer__go-go-title{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -50,13 +50,12 @@
     text-transform: uppercase;
 }
 // берем готовые стили из файла go-go и меняем только некоторые для подвала
-.footer__go-list .go-list__li--link{
-    background-color: rgba(255, 255, 255, 0.1);
+.footer__go-list .go-list__link{
+    background-color: $rgba-bacground;
     color: $color-lite-text;
-}
-.footer__go-list .go-list__li--link:hover,
-.footer__go-list .go-list__li--link:focus{
-    background-color: $color-style;
+    &:hover,&:focus{
+        background-color: $color-style;
+    }
 }
 /* стили для третьей колонки подвала */
 .footer__sabmit{
@@ -67,7 +66,7 @@
     display: flex;
     margin-top: 20px;
 }
-.footer__form--email{
+.footer__form-email{
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -80,14 +79,13 @@
     color: $color-lite-text;
     outline: none;
     transition-property: border;
-    transition-duration: var(--time-animation);
-    transition-timing-function: var(--cubik-transform);
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
+    &:hover,&:focus{
+        border: 1px solid $color-style;
+    }
 }
-.footer__form--email:hover,
-.footer__form--email:focus{
-    border: 1px solid $color-style;
-}
-.footer__form--icon{
+.footer__form-icon{
     fill: currentColor;
     width: 24px;
     height: 24px;

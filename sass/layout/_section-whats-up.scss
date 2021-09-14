@@ -2,12 +2,17 @@
     padding-bottom: 94px;
 }
 .whats-up__li{
-    position: relative;
-}
-.whats-up__li + .whats-up__li{
+    min-width: 370px;
+    flex-basis: calc(100%/3 - 30px);
+    margin-top: 30px;
     margin-left: 30px;
+    position: relative;
+    // &+&{
+    //     margin-left: 30px;
+    // }
 }
-.whats-up__li--about{
+.whats-up__about{
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,4 +32,7 @@
 }
 .whats-up__list{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
 }
