@@ -154,16 +154,17 @@
         transition-property: border-color;
         transition-duration: $time-animation;
         transition-timing-function: $cubik-transform;
+        // этот код заставляет таб работать на скрытой кнопке
+        .check_input:hover~&,
+        .check_input:focus~&{
+            border-color: $color-style;
+        }
     }
     &:hover::before,&:focus::before{
         border-color: $color-style;
     }
 }
-// этот код заставляет таб работать на бефоре
-.check_input:hover~.check__licensia::before,
-.check_input:focus~.check__licensia::before{
-    border-color: $color-style;
-}
+
 .form__licensia{
     display: flex;
     align-items: center;
