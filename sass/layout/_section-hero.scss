@@ -22,16 +22,21 @@
 // }
 // ********************************************************************************************************************************
 .hero{
-    //     max-width: 1600px;
-    //     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //     url(../images/hero.jpg);
-    //     background-repeat: no-repeat;
-    //     background-position: 50% 50%;
+   
         background-color: $color-baground;
         padding-top: 118px;
         padding-bottom: 118px;
         margin-right: auto;
         margin-left: auto;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        @media screen and (min-width: 768px) {
+        }
+        @media screen and (min-width: 1200px) {
+                max-width: 1600px;
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero.jpg);
+        }
     }
     .hero__idea{
             color: $color-lite-text;
