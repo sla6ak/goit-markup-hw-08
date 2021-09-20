@@ -84,3 +84,121 @@
 //     }
 // }
 // ****************************************************************************************
+.header{
+    border-bottom: 1px solid  $color-border-heder;
+}
+.header__conteiner{
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        min-height: 80px;
+    }
+}
+.header__conteiner--burger{
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 100%;
+    }
+
+}
+.header__button{
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.header__button--icon{
+    width: 40px;
+    height: 40px;
+}
+/* логотип +ссылки по страницам */
+.heder__navigation{
+    display: flex;
+    align-items: center;
+}
+.heder__navigation--logo{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navigation__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 88px;
+    @media screen and (min-width: 768px) {
+        margin-left: 93px;
+    }
+}
+.navigation__li + .navigation__li{
+    margin-left: 30px;
+}
+.navigation__pages{
+    color: $general-text;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    &--active-alltime{
+        color: $color-style;
+        position: relative;
+        // подчеркивание ссылки текущей страницы
+        &::after{
+            content: "";
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            background-color: $color-style;
+        }
+    }
+}
+/* active-alltime обязательно ниже navigation__li--pages */
+
+/* ссылки на почту и телефон */
+.header__list-address{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        & .list-adress__li+.list-adress__li{
+            margin-left: 50px;
+        }
+    }
+}
+.list-adress__link{
+    display: flex;
+    font-size: 14px;
+    line-height: auto;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: $color-paragraph;
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    &-svg1{
+        width: 16px;
+        height: 12px;
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    &-svg2{
+        width: 10px;
+        height: 16px;
+        fill: currentColor;
+        margin-right: 10px;
+    }
+}

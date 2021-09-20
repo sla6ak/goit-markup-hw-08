@@ -274,6 +274,183 @@ body {
 }
 
 /* *************стили для шапки на всех страницах************* */
+.header {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header__conteiner {
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .header__conteiner {
+    min-height: 80px;
+  }
+}
+
+.header__conteiner--burger {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header__conteiner--burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+
+.header__button--icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* логотип +ссылки по страницам */
+.heder__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heder__navigation--logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 88px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    margin-left: 93px;
+  }
+}
+
+.navigation__li + .navigation__li {
+  margin-left: 30px;
+}
+
+.navigation__pages {
+  color: #000000;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.navigation__pages--active-alltime {
+  color: #2196F3;
+  position: relative;
+}
+
+.navigation__pages--active-alltime::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: #2196F3;
+}
+
+/* active-alltime обязательно ниже navigation__li--pages */
+/* ссылки на почту и телефон */
+.header__list-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__list-address {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__list-address .list-adress__li + .list-adress__li {
+    margin-left: 50px;
+  }
+}
+
+.list-adress__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  line-height: auto;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .list-adress__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list-adress__link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.list-adress__link-svg1 {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.list-adress__link-svg2 {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 /* ****************стили для подвала на всех страницах************ */
 .footer {
   background-color: #2f303a;
@@ -490,6 +667,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  padding: 0px 5px;
 }
 
 /* секция преимуществ */

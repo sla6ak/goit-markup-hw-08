@@ -19,6 +19,7 @@
         ".vscode/**" 
     ],
     "liveSassCompile.settings.showOutputWindow":true,
+    "liveServer.settings.useLocalIp": true,
     "liveSassCompile.settings.autoprefix": [
         "> 1%",
         "last 2 versions"
