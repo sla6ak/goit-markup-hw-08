@@ -1,17 +1,42 @@
+
+// ******************************************************************************************************
 .footer{
     background-color: $color-baground;
     color: $color-lite-text;
-    padding: 60px 0px;
+    padding: 30px 0px;
 }
 .footer__conteiner{
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: space-between;
+    }
+}
+.footer__conteiner--tablet{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-grow: 1;
+    }
+}
+.footer__conteiner--padding{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 // первая колонка
 .footer ._logo{
     color: $color-lite-text;
-    margin-right: auto;
+    // margin-right: auto;
 }
 .footer__adress{
     margin-top: 20px;
@@ -37,9 +62,12 @@
     font-weight: 400;
 }
 // вторая колонка
-.footer__go-go{
-    margin-left: 70px;
-}
+// .footer__go-go{
+//     margin-left: 0px;
+//     @media screen and (min-width: 768px) {
+//         margin-left: 168px;
+//     }
+// }
 .footer__go-go-title{
     font-family: Roboto;
     font-style: normal;
@@ -48,6 +76,7 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 // берем готовые стили из файла go-go и меняем только некоторые для подвала
 .footer__go-list .go-list__link{
@@ -57,24 +86,35 @@
         background-color: $color-style;
     }
 }
-/* стили для третьей колонки подвала */
+// /* стили для третьей колонки подвала */
 .footer__sabmit{
-    flex-grow: 2;
-    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    // flex-grow: 2;
+    // margin-left: 93px;
 }
 .footer__form{
-    display: flex;
-    margin-top: 20px;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        display: flex;
+    }
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // margin-top: 20px;
 }
 .footer__form-email{
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 50px;
     width: 100%;
     background-color: transparent;
-    margin-right: 12px;
     padding: 15px 16px;
     color: $color-lite-text;
     outline: none;
@@ -84,7 +124,18 @@
     &:hover,&:focus{
         border: 1px solid $color-style;
     }
+    
+    margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 358px;
+        margin-right: 12px;
+    }
 }
+// ************стиль иконки*****************
 .footer__form-icon{
     fill: currentColor;
     width: 24px;

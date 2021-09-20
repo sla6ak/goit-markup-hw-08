@@ -1,6 +1,7 @@
 .go-list{
     display: flex;
     margin-top: 20px;
+    justify-content: center;
 }
 .go-list__li+.go-list__li{
     margin-left: 10px;

@@ -1,15 +1,74 @@
-.best__list{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
-}
-// ************************************************************
+// .best__list{
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: -30px;
+//     margin-left: -30px;
+// }
+// // ************************************************************
+// // .best__why{
+// //     flex-basis: calc(100%/4 - 30px);
+// //     margin-top: 30px;
+// //     margin-left: 30px;
+// //     &::before{
+// //         content: "";
+// //         width: 270px;
+// //         height: 120px;
+// //         display: block;
+// //         background-color: $color-bagraund_section;
+// //         margin-bottom: 30px;
+// //         background-repeat: no-repeat;
+// //         background-position: center;
+// //         @each $best-icon in $best {
+// //                 background-image: url(../images/#{$best-icon}.png);
+// //         }
+// //     }
+// // }
+// // *****************************************************************************
+// // @each $best-icon in $best{
+// //     .best__why{
+// //                 flex-basis: calc(100%/4 - 30px);
+// //                 margin-top: 30px;
+// //                 margin-left: 30px;
+// //                 &::before{
+// //                     content: "";
+// //                     width: 270px;
+// //                     height: 120px;
+// //                     display: block;
+// //                     background-color: $color-bagraund_section;
+// //                     margin-bottom: 30px;
+// //                     background-repeat: no-repeat;
+// //                     background-position: center;
+// //                     background-image: url(../images/#{$best-icon}.png);
+// //                     }
+// //                 }
+// // }
+// // ***********************************************************************************
+// // .best__why{
+// //     flex-basis: calc(100%/4 - 30px);
+// //     margin-top: 30px;
+// //     margin-left: 30px;
+// // }
+// // @each $best-icon in $best{
+// // .best__why::before{
+// //     content: "";
+// //     width: 270px;
+// //     height: 120px;
+// //     display: block;
+// //     background-color: $color-bagraund_section;
+// //     margin-bottom: 30px;
+// //     background-repeat: no-repeat;
+// //     background-position: center;
+// //     background-image: url(../images/#{$best-icon}.png);
+// //     }
+// // }
+// // *********************************************************************************
 // .best__why{
-//     flex-basis: calc(100%/4 - 30px);
-//     margin-top: 30px;
-//     margin-left: 30px;
-//     &::before{
+//             flex-basis: calc(100%/4 - 30px);
+//             margin-top: 30px;
+//             margin-left: 30px;
+// }
+// @each $best-icon in $best{
+//     .best__why--#{$best-icon}::before{
 //         content: "";
 //         width: 270px;
 //         height: 120px;
@@ -18,59 +77,50 @@
 //         margin-bottom: 30px;
 //         background-repeat: no-repeat;
 //         background-position: center;
-//         @each $best-icon in $best {
-//                 background-image: url(../images/#{$best-icon}.png);
+//         background-image: url(../images/#{$best-icon}.png);
 //         }
 //     }
+// // вывод - нам нужно объязательно перечислять названия разных классов в html
+// //  чтоб запустить перечисление
+// .best__why-title{
+//     font-family: Roboto;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     text-transform: uppercase;
+//     margin-bottom: 10px;
 // }
-// *****************************************************************************
-// @each $best-icon in $best{
-//     .best__why{
-//                 flex-basis: calc(100%/4 - 30px);
-//                 margin-top: 30px;
-//                 margin-left: 30px;
-//                 &::before{
-//                     content: "";
-//                     width: 270px;
-//                     height: 120px;
-//                     display: block;
-//                     background-color: $color-bagraund_section;
-//                     margin-bottom: 30px;
-//                     background-repeat: no-repeat;
-//                     background-position: center;
-//                     background-image: url(../images/#{$best-icon}.png);
-//                     }
-//                 }
+// .best__why-text{
+//     font-family: Roboto;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+//     color: $color-paragraph;
 // }
-// ***********************************************************************************
-// .best__why{
-//     flex-basis: calc(100%/4 - 30px);
-//     margin-top: 30px;
-//     margin-left: 30px;
-// }
-// @each $best-icon in $best{
-// .best__why::before{
-//     content: "";
-//     width: 270px;
-//     height: 120px;
-//     display: block;
-//     background-color: $color-bagraund_section;
-//     margin-bottom: 30px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-image: url(../images/#{$best-icon}.png);
-//     }
-// }
-// *********************************************************************************
+// ********************************************************************************************************************
+
+.best__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
 .best__why{
-            flex-basis: calc(100%/4 - 30px);
-            margin-top: 30px;
-            margin-left: 30px;
+    flex-basis: calc(100%/1 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+    @media screen and (min-width: 768px) {
+        flex-basis: calc(100%/2 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100%/4 - 30px);
+    }
 }
 @each $best-icon in $best{
     .best__why--#{$best-icon}::before{
         content: "";
-        width: 270px;
         height: 120px;
         display: block;
         background-color: $color-bagraund_section;
@@ -80,16 +130,18 @@
         background-image: url(../images/#{$best-icon}.png);
         }
     }
-// вывод - нам нужно объязательно перечислять названия разных классов в html
-//  чтоб запустить перечисление
 .best__why-title{
     font-family: Roboto;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.2;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
 }
 .best__why-text{
     font-family: Roboto;

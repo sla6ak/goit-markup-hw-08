@@ -15,9 +15,9 @@
 <body>
     <header class="header">
         <div class="header__conteiner _conteiner">
+            <!-- этот логотип навигационная ссылка -->
+            <a href="./index.html" id="link-header" class="heder__navigation--logo _logo"><span>Web</span>Studio</a>
             <nav class="heder__navigation navigation">
-                <!-- этот логотип навигационная ссылка -->
-                <a href="./index.html" id="link-header" class="heder__navigation--logo _logo"><span>Web</span>Studio</a>
                 <ul class="navigation__list">
                     <li class="navigation__li">
                         <a href="./index.html" class="navigation__pages metamorphosis">Студия</a>
@@ -170,60 +170,61 @@
     </main>
     <footer class="footer">
         <div class="footer__conteiner _conteiner">
-            <div>
-            <!-- это логотип сайта он ведет на начало главной страницы -->
-                <a href="./index.html" class="_logo"><span>Web</span>Studio</a>
-                <address class="footer__adress">
-                    <ul class="footer__list-adress">
-                        <li class="footer__list-adress-city">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="">
-                            <a class="footer__list-adress-link metamorphosis" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <div class="footer__conteiner--tablet">
+                <div class="footer__conteiner--padding">
+                <!-- это логотип сайта он ведет на начало главной страницы -->
+                    <a href="./index.html" class="_logo"><span>Web</span>Studio</a>
+                    <address class="footer__adress">
+                        <ul class="footer__list-adress">
+                            <li class="footer__list-adress-city">г. Киев, пр-т Леси Украинки, 26</li>
+                            <li class="">
+                                <a class="footer__list-adress-link metamorphosis" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="">
+                                <a class="footer__list-adress-link metamorphosis" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer__go-go footer__conteiner--padding ">
+                    <p class="footer__go-go-title">Присоединяйтесь</p>
+                    <ul class="footer__go-list go-list">
+                        <li class="go-list__li">
+                            <a href="" class="go-list__link">
+                                <svg class="go-list__link_icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-instagram-2">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="">
-                            <a class="footer__list-adress-link metamorphosis" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="go-list__li"> 
+                            <a href="" class="go-list__link ">
+                                <svg class="go-list__link_icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-Group">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="go-list__li"> 
+                            <a href="" class="go-list__link ">
+                                <svg class="go-list__link_icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-facebook-1">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="go-list__li"> 
+                            <a href="" class="go-list__link ">
+                                <svg class="go-list__link_icon">
+                                    <use href="./images/svg/symbol-defs.svg#icon-linkedin-1">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
+                </div>
             </div>
-            <div class="footer__go-go">
-                <p class="footer__go-go-title">Присоединяйтесь</p>
-                <ul class="footer__go-list go-list">
-                    <li class="go-list__li">
-                        <a href="" class="go-list__link">
-                            <svg class="go-list__link_icon">
-                                <use href="./images/svg/symbol-defs.svg#icon-instagram-2">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="go-list__li"> 
-                        <a href="" class="go-list__link ">
-                            <svg class="go-list__link_icon">
-                                <use href="./images/svg/symbol-defs.svg#icon-Group">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="go-list__li"> 
-                        <a href="" class="go-list__link ">
-                            <svg class="go-list__link_icon">
-                                <use href="./images/svg/symbol-defs.svg#icon-facebook-1">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="go-list__li"> 
-                        <a href="" class="go-list__link ">
-                            <svg class="go-list__link_icon">
-                                <use href="./images/svg/symbol-defs.svg#icon-linkedin-1">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-               
-            </div>
-            <div class="footer__sabmit">
+            <div class="footer__sabmit footer__conteiner--padding ">
                 <b class="footer__go-go-title">Подпишитесь на рассылку</b>
                 <form action="#" class="footer__form">
                     <input type="email" class="footer__form-email" name="email" required placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">

@@ -1,183 +1,210 @@
+// .modal{
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//     left: 0;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     opacity: 1;
+//     transition-property: opacity;
+//     transition-duration: $time-animation;
+//     transition-timing-function: $cubik-transform;
+// }
+// .is-hidden{
+//     opacity: 0;
+//     pointer-events: none;
+// }
+// .modal__view{
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     min-width: 528px;
+//     min-height: 581px;
+//     background-color: $color-fon_cards;
+//     padding: 40px;
+// }
+// .modal__close{
+//     position: absolute;
+//     right: 10px;
+//     top: 10px;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     border-radius: 50%;
+//     background-color: $color-fon_cards;
+//     width: 30px;
+//     height: 30px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     cursor: pointer;
+//     &:hover .modal_icon{
+//         fill: $color-style;
+//     }
+// }
+// .modal_icon{
+//     width: 18px;
+//     height: 18px;
+//     fill: $general-text;
+//     transition-property: fill;
+//     transition-duration: $time-animation;
+//     transition-timing-function: $cubik-transform;
+// }
+// /* контент модального окна */
+// .pleas{
+//     margin-bottom: 12px;
+//     color: $color-text_cards;
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 23px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+// }
+// .modal__form{
+//     display: flex;
+//     flex-direction: column;
+//     color: $color-paragraph;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 1.2;
+//     letter-spacing: 0.01em;
+// }
+// .input--style{
+//     outline: none;
+//     height: 40px;
+//     padding-left: 42px;
+//     padding-top: 12px;
+//     padding-bottom: 12px;
+//     padding-right: 16px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     transition-property: border-color;
+//     transition-duration: $time-animation;
+//     transition-timing-function: $cubik-transform;
+//     &:hover,&:focus{
+//         border-color: $color-style;
+//     }
+//     &:hover~svg,&:focus~svg{
+//         fill: $color-style;
+//     }
+// }
+// .form__input{
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+//     margin-bottom: 10px;
+// }
+// .icon-input{
+//     position: absolute;
+//     left: 12px;
+//     top: 28px;
+// }
+// .form__label{
+//     margin-bottom: 4px;
+// }
+// .form__coment{
+//     outline: none;
+//     padding: 12px 16px;
+//     margin-bottom: 20px;
+//     height: 120px;
+//     resize: none;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     transition-property: border-color;
+//     transition-duration: $time-animation;
+//     transition-timing-function: $cubik-transform;
+//     &:hover,&:focus{
+//         border-color: $color-style;
+//     }
+// }
+// .check_icon{
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     top: 4px;
+//     width: 16px;
+//     height: 15px;
+//     opacity: 0;
+//     transition-property: opacity;
+//     transition-duration: $time-animation;
+//     transition-timing-function: $cubik-transform;
+//     pointer-events: none;
+// }
+// // этот клас добавляет js для появления кастомной иконки
+// .agrey{
+//     opacity: 1;
+// }
+// // ***********************************************
+// .check__licensia{
+//     display: flex;
+//     align-items: center;
+//     margin-right: 4px;
+//     cursor: pointer;
+//     &::before{
+//         content: "";
+//         display: block;
+//         width: 16px;
+//         height: 15px;
+//         border: 1px solid $general-text;
+//         border-radius: 2px;
+//         margin-right: 8px;
+//         transition-property: border-color;
+//         transition-duration: $time-animation;
+//         transition-timing-function: $cubik-transform;
+//         // этот код заставляет таб работать на скрытой кнопке
+//         .check_input:hover~&,
+//         .check_input:focus~&{
+//             border-color: $color-style;
+//         }
+//     }
+//     &:hover::before,&:focus::before{
+//         border-color: $color-style;
+//     }
+// }
+
+// .form__licensia{
+//     display: flex;
+//     align-items: center;
+//     margin-left: auto;
+//     margin-right: auto;
+//     position: relative;
+//     margin-bottom: 32px;
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+// }
+// .form__licensia a{
+//     text-decoration: underline;
+//     color: $color-style;
+// }
+// ************************************************************************************************
 .modal{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: $time-animation;
-    transition-timing-function: $cubik-transform;
-}
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: $time-animation;
+        transition-timing-function: $cubik-transform;
+    }
 .is-hidden{
     opacity: 0;
     pointer-events: none;
 }
 .modal__view{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
-    background-color: $color-fon_cards;
-    padding: 40px;
-}
-.modal__close{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background-color: $color-fon_cards;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    &:hover .modal_icon{
-        fill: $color-style;
+        position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     min-width: 528px;
+    //     min-height: 581px;
+        background-color: $color-fon_cards;
+    //     padding: 40px;
     }
-}
-.modal_icon{
-    width: 18px;
-    height: 18px;
-    fill: $general-text;
-    transition-property: fill;
-    transition-duration: $time-animation;
-    transition-timing-function: $cubik-transform;
-}
-/* контент модального окна */
-.pleas{
-    margin-bottom: 12px;
-    color: $color-text_cards;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.modal__form{
-    display: flex;
-    flex-direction: column;
-    color: $color-paragraph;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-}
-.input--style{
-    outline: none;
-    height: 40px;
-    padding-left: 42px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 16px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition-property: border-color;
-    transition-duration: $time-animation;
-    transition-timing-function: $cubik-transform;
-    &:hover,&:focus{
-        border-color: $color-style;
-    }
-    &:hover~svg,&:focus~svg{
-        fill: $color-style;
-    }
-}
-.form__input{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-bottom: 10px;
-}
-.icon-input{
-    position: absolute;
-    left: 12px;
-    top: 28px;
-}
-.form__label{
-    margin-bottom: 4px;
-}
-.form__coment{
-    outline: none;
-    padding: 12px 16px;
-    margin-bottom: 20px;
-    height: 120px;
-    resize: none;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    box-sizing: border-box;
-    border-radius: 4px;
-    transition-property: border-color;
-    transition-duration: $time-animation;
-    transition-timing-function: $cubik-transform;
-    &:hover,&:focus{
-        border-color: $color-style;
-    }
-}
-.check_icon{
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 4px;
-    width: 16px;
-    height: 15px;
-    opacity: 0;
-    transition-property: opacity;
-    transition-duration: $time-animation;
-    transition-timing-function: $cubik-transform;
-    pointer-events: none;
-}
-// этот клас добавляет js для появления кастомной иконки
-.agrey{
-    opacity: 1;
-}
-// ***********************************************
-.check__licensia{
-    display: flex;
-    align-items: center;
-    margin-right: 4px;
-    cursor: pointer;
-    &::before{
-        content: "";
-        display: block;
-        width: 16px;
-        height: 15px;
-        border: 1px solid $general-text;
-        border-radius: 2px;
-        margin-right: 8px;
-        transition-property: border-color;
-        transition-duration: $time-animation;
-        transition-timing-function: $cubik-transform;
-        // этот код заставляет таб работать на скрытой кнопке
-        .check_input:hover~&,
-        .check_input:focus~&{
-            border-color: $color-style;
-        }
-    }
-    &:hover::before,&:focus::before{
-        border-color: $color-style;
-    }
-}
-
-.form__licensia{
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    margin-bottom: 32px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-}
-.form__licensia a{
-    text-decoration: underline;
-    color: $color-style;
-}

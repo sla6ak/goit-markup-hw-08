@@ -17,12 +17,8 @@ img{
 li{
     list-style-type: none;
 }
-._conteiner{
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+html{
+    box-sizing: border-box;
 }
  body{
     font-family: Roboto;
@@ -30,9 +26,29 @@ li{
     font-size: 14px;
     letter-spacing: 0.03em;
 }
+._conteiner{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 }
 .none{
     opacity: 0;
@@ -40,9 +56,7 @@ li{
     height: 0;
     font-size: 0;
 }
-html{
-    box-sizing: border-box;
-}
+
 .metamorphosis{
     transition-property: color;
     transition-duration: $time-animation;
