@@ -520,7 +520,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.menu-conteiner__navigation .menu-conteiner__nav-li:not(:last-child) {
+.menu-conteiner__navigation .menu-conteiner__nav-li {
   margin-bottom: 32px;
 }
 
@@ -575,6 +575,7 @@ body {
 }
 
 .menu-conteiner__go-go--link {
+  text-decoration: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;

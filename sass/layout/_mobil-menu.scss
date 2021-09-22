@@ -32,7 +32,7 @@
     font-size: 40px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    & .menu-conteiner__nav-li:not(:last-child){
+    & .menu-conteiner__nav-li{
         margin-bottom: 32px;
     }
 }
@@ -78,6 +78,7 @@
     }
 }
 .menu-conteiner__go-go--link{
+    text-decoration: none;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
