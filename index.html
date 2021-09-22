@@ -11,17 +11,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body>
+<body data-modald class="body">
     <header class="header">
         <div class="header__conteiner _conteiner">
             <!-- этот логотип навигационная ссылка -->
             <a href="./index.html" id="link-header" class="heder__navigation--logo _logo"><span>Web</span>Studio</a>
-            <button type="button" class="header__button">
-                <svg class="header__button--icon">
-                    <use href="./images/svg/symbol-defs.svg#icon-close_40px"></use>
-                    <use href="./images/svg/symbol-defs.svg#icon-menu_40px"></use>
-            </svg>
+            <button type="button" class="header__button js-open-menu">
+                <svg class="header__button--icon" aria-label="Переключатель мобильного меню">
+                    <use href="./images/svg/symbol-defs.svg#icon-menu_40px" class="icon-menu"></use>
+                </svg>
             </button>
+            <!-- **********************************************mobil-menu******************************** -->
+            <div class="js-menu-container">
+                <button type="button" class="header__button js-close-menu">
+                    <svg class="header__button--icon" aria-label="Переключатель мобильного меню">
+                        <use href="./images/svg/symbol-defs.svg#icon-close_40px" class="icon-menu"></use>
+                    </svg>
+                </button>
+
+                <nav class="menu-conteiner__navigation">
+                    <li class="menu-conteiner__nav-li">
+                        <a href="./index.html" class="menu-conteiner__nav-link metamorphosis">Студия</a>
+                    </li>
+                    <li class="menu-conteiner__nav-li">
+                        <a  href="./portfolio.html" class="menu-conteiner__nav-link metamorphosis">Портфолио</a>
+                    </li>
+                    <li class="menu-conteiner__nav-li">
+                        <a href="#" class="menu-conteiner__nav-link metamorphosis">Контакты</a>
+                    </li>
+                </nav>
+                <ul class="menu-container__list-address">
+                    <li class="menu-conteiner__adress">
+                        <a href="tel:+380961111111" class="menu-conteiner__tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="menu-conteiner__adress">
+                        <a href="mailto:info@devstudio.com" class="menu-conteiner__mail metamorphosis">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-conteiner__go-go">
+                    <li class="menu-conteiner__go-go--border">
+                       <a href="#" class="menu-conteiner__go-go--link">Instagram</a></li>
+                    <li class="menu-conteiner__go-go--border">
+                        <a href="#" class="menu-conteiner__go-go--link">Twitter</a></li>
+                    <li class="menu-conteiner__go-go--border">
+                        <a href="#" class="menu-conteiner__go-go--link">Facebook</a></li>
+                    <li class="menu-conteiner__go-go--border">
+                        <a href="#" class="menu-conteiner__go-go--link">LinkedIn</a></li>
+                </ul>
+            </div>
+            <!-- ********************************************** -->
             <div class="header__conteiner--burger">
                 <nav class="heder__navigation navigation">
                     <ul class="navigation__list">

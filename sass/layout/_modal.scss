@@ -1,37 +1,48 @@
 
 // ************************************************************************************************
 .modal{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.2);
-        opacity: 1;
-        transition-property: opacity;
-        transition-duration: $time-animation;
-        transition-timing-function: $cubik-transform;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: $time-animation;
+    transition-timing-function: $cubik-transform;
+    overflow-y: scroll;
+    @media screen and (max-width: 479px) {
+        padding: 40px 20px 40px 20px;
     }
+}
+body.scroll{
+    overflow-y: hidden;
+}
 .is-hidden{
     opacity: 0;
     pointer-events: none;
 }
 .modal__view{
+    position: relative;
+    background-color: $color-fon_cards;
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        min-height: 100%;
+        padding: 20px;
+    }
+    @media screen and (min-width: 480px) {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 450px;
         min-height: 609px;
-        background-color: $color-fon_cards;
         padding: 40px;
+    } 
     @media screen and (min-width: 1200px) {
             width: 528px;
             min-height: 581px;
-    }
-    @media screen and (max-width: 370px) {
-        width: 350px;
-        min-height: 609px;
     }
     }
     .modal__close{
@@ -145,8 +156,8 @@
     @media screen and (min-width: 1200px) {
         top: 4px;
     }
-    @media screen and (max-width: 370px) {
-        top: 6px;
+    @media screen and (max-width: 448px) {
+        top: 7px;
     }
 }
 // этот клас добавляет js для появления кастомной иконки
