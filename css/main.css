@@ -1498,6 +1498,17 @@ body.scroll {
   color: #ffffff;
 }
 
+.menu__filter {
+  margin: 0px 4px 0px 4px;
+}
+
+.filter-down {
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  background-color: #2196F3;
+  color: #ffffff;
+}
+
 .portfolio__sait {
   display: -webkit-box;
   display: -ms-flexbox;
