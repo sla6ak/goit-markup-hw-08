@@ -55,6 +55,8 @@ html{
     width: 0;
     height: 0;
     font-size: 0;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
 }
 
 .metamorphosis{

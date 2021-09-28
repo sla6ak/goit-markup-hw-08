@@ -3,7 +3,7 @@
 .footer{
     background-color: $color-baground;
     color: $color-lite-text;
-    padding: 30px 0px;
+    padding: 60px 0px;
 }
 .footer__conteiner{
     text-align: center;
@@ -24,15 +24,15 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    @media screen and (min-width: 1200px) {
-        flex-grow: 1;
+    
+}
+.footer__conteiner--mardgin{
+        margin-bottom: 60px;
+        @media screen and (min-width: 1200px){
+            margin-bottom: 0px;
+        }
     }
-}
-.footer__conteiner--padding{
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-}
+   
 // первая колонка
 .footer ._logo{
     color: $color-lite-text;
@@ -40,6 +40,7 @@
 }
 .footer__adress{
     margin-top: 20px;
+    
 }
 .footer__list-adress{
     font-size: 14px;
@@ -62,12 +63,12 @@
     font-weight: 400;
 }
 // вторая колонка
-// .footer__go-go{
-//     margin-left: 0px;
-//     @media screen and (min-width: 768px) {
-//         margin-left: 168px;
-//     }
-// }
+.footer__go-go{
+    margin-left: 0px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+}
 .footer__go-go-title{
     font-family: Roboto;
     font-style: normal;
@@ -91,9 +92,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-    // flex-grow: 2;
-    // margin-left: 93px;
 }
 .footer__form{
     @media screen and (min-width: 1200px) {

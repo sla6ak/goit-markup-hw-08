@@ -1,48 +1,53 @@
 
 // ********************************************************************************************************************************
 .hero{
-background-color: $color-baground;
-padding-top: 118px;
-padding-bottom: 118px;
-margin-right: auto;
-margin-left: auto;
-background-repeat: no-repeat;
-background-position: 50% 50%;
-max-width: 480px;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-url(./../images/index/mobil/mheader-x1.jpg);
-        // @media (min-device-pixel-ratio: 2),
-        //         (-webkit-min-device-pixel-ratio: 2),
-        //         (min-resolution: 192dpi),
-        //         (min-resolution: 2dppx) {
-        //         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        //         url(../../images/index/mobil/mheader-x2.jpg);
-        //         }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 26px;
+        line-height: 1.3;
+        height: 400px;
+        background-color: $color-baground;
+        margin-right: auto;
+        margin-left: auto;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        max-width: 480px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(./../images/index/mobil/mheader-x1.jpg);
+        @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/index/mobil/mheader-x2.jpg);
+                }
 @media screen and (min-width: 768px) {
         max-width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(./../images/index/tablet/theader-x1.png);
-//                 @media (min-device-pixel-ratio: 2),
-//                 (-webkit-min-device-pixel-ratio: 2),
-//                 (min-resolution: 192dpi),
-//                 (min-resolution: 2dppx) {
-//                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//                 url(../../images/index/tablet/theader-x2.jpg);
-//                 }
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/index/tablet/theader-x2.jpg);
+                }
         }
-
-        
 @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.4;
+        height: 600px;
         max-width: 1600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(./../images/index/descktop/dheader-x1.jpg);
-//                 @media (min-device-pixel-ratio: 2),
-//                 (-webkit-min-device-pixel-ratio: 2),
-//                 (min-resolution: 192dpi),
-//                 (min-resolution: 2dppx) {
-//                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//                 url(../../images/index/descktop/dheader-x2.jpg);
-//                 }
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../../images/index/descktop/dheader-x2.jpg);
+                }
         }
 }
 .hero__idea{

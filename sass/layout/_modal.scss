@@ -80,6 +80,10 @@ body.scroll{
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-right: 5%;
+    @media screen and (max-width: 350px){
+        font-size: calc(1em+1vW);
+    }
 }
 .modal__form{
     display: flex;
@@ -142,7 +146,7 @@ body.scroll{
     }
 }
 .check_icon{
-    display: block;
+    display: inline-block;
     position: absolute;
     left: 0;
     top: 0px;
@@ -156,9 +160,6 @@ body.scroll{
     @media screen and (min-width: 1200px) {
         top: 4px;
     }
-    @media screen and (max-width: 448px) {
-        top: 7px;
-    }
 }
 // этот клас добавляет js для появления кастомной иконки
 .agrey{
@@ -166,18 +167,18 @@ body.scroll{
 }
 // ***********************************************
 .check__licensia{
-    display: flex;
+    display: inline-block;
     align-items: center;
     margin-right: 4px;
     cursor: pointer;
     &::before{
         content: "";
-        display: block;
+        display: inline-block;
         width: 16px;
         height: 15px;
         border: 1px solid $general-text;
         border-radius: 2px;
-        margin-right: 8px;
+        margin-right: 5px;
         transition-property: border-color;
         transition-duration: $time-animation;
         transition-timing-function: $cubik-transform;
@@ -193,7 +194,7 @@ body.scroll{
 }
 
 .form__licensia{
-    display: flex;
+    display: inline;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -209,7 +210,8 @@ body.scroll{
     }
     
 }
-.form__licensia a{
+.check__licensia--link{
     text-decoration: underline;
     color: $color-style;
+    margin-left: 3px;
 }

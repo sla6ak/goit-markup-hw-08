@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body data-modald class="body">
+<body data-modald>
     <header class="header">
         <div class="header__conteiner _conteiner">
             <!-- этот логотип навигационная ссылка -->
@@ -22,23 +22,24 @@
                 </svg>
             </button>
             <!-- **********************************************mobil-menu******************************** -->
-            <div class="js-menu-container">
+            <div class="js-menu-container" id="mobile-menu">
                 <button type="button" class="header__button js-close-menu">
                     <svg class="header__button--icon" aria-label="Переключатель мобильного меню">
                         <use href="./images/svg/symbol-defs.svg#icon-close_40px" class="icon-menu"></use>
                     </svg>
                 </button>
-
                 <nav class="menu-conteiner__navigation">
-                    <li class="menu-conteiner__nav-li">
-                        <a href="./index.html" class="menu-conteiner__nav-link metamorphosis">Студия</a>
-                    </li>
-                    <li class="menu-conteiner__nav-li">
-                        <a  href="./portfolio.html" class="menu-conteiner__nav-link metamorphosis">Портфолио</a>
-                    </li>
-                    <li class="menu-conteiner__nav-li">
-                        <a href="#" class="menu-conteiner__nav-link metamorphosis">Контакты</a>
-                    </li>
+                    <ul class="menu-conteiner__list">
+                        <li class="menu-conteiner__nav-li">
+                            <a href="./index.html" class="menu-conteiner__nav-link metamorphosis">Студия</a>
+                        </li>
+                        <li class="menu-conteiner__nav-li">
+                            <a  href="./portfolio.html" class="menu-conteiner__nav-link metamorphosis">Портфолио</a>
+                        </li>
+                        <li class="menu-conteiner__nav-li">
+                            <a href="#" class="menu-conteiner__nav-link metamorphosis">Контакты</a>
+                        </li>
+                    </ul>
                 </nav>
                 <ul class="menu-container__list-address">
                     <li class="menu-conteiner__adress">
@@ -147,10 +148,10 @@
                 <ul class="comando__list">
                     <li class="comando__card">
                         <picture>
-                            <source srcset="./images/index/mobil/ma-x1.jpg 1x, ./images/index/mobil/ma-x2.jpg 2x" media="(max-width: 480px)">
-                            <source srcset="./images/index/tablet/ta-x1.jpg 1x, ./images/index/tablet/ta-x2.jpg 2x" media="(max-width: 768px)">
-                            <source srcset="./images/index/descktop/da-x1.jpg 1x, ./images/index/descktop/da-x2.jpg 2x" media="(max-width: 1200px)">
-                            <img src="./images/index/mobil/ma-x1.jpg" width="270" height="260" alt="Фотопортрет мужчины">
+                            <source srcset="./images/index/mobil/ma-x1.jpg 1x, ./images/index/mobil/ma-x2.jpg 2x" media="(max-width: 767px)">
+                            <source srcset="./images/index/tablet/ta-x1.jpg 1x, ./images/index/tablet/ta-x2.jpg 2x" media="(max-width: 1199px)">
+                            <source srcset="./images/index/descktop/da-x1.jpg 1x, ./images/index/descktop/da-x2.jpg 2x" media="(min-width: 1200px)">
+                            <img src="#" width="270" height="260" alt="Фотопортрет мужчины">
                         </picture>
                         <div class="comando__caption">
                             <h3 class="comando__caption--title">Игорь Демьяненко</h3>
@@ -193,10 +194,10 @@
                     </li>
                     <li class="comando__card">
                         <picture>
-                            <source  srcset="./images/index/mobil/mb-x1.jpg 1x, ./images/index/mobil/mb-x2.jpg 2x" media="(max-width: 480px)">
-                            <source  srcset="./images/index/tablet/tb-x1.jpg 1x, ./images/index/tablet/tb-x2.jpg 2x" media="(max-width: 768px)">
-                            <source  srcset="./images/index/descktop/db-x1.jpg 1x, ./images/index/descktop/db-x2.jpg 2x" media="(max-width: 1200px)">
-                            <img src="./images/index/mobil/mb-x1.jpg" width="270" height="260" alt="Фотопортрет женчины">
+                            <source  srcset="./images/index/mobil/mb-x1.jpg 1x, ./images/index/mobil/mb-x2.jpg 2x" media="(max-width: 767px)">
+                            <source  srcset="./images/index/tablet/tb-x1.jpg 1x, ./images/index/tablet/tb-x2.jpg 2x" media="(max-width: 1199px)">
+                            <source  srcset="./images/index/descktop/db-x1.jpg 1x, ./images/index/descktop/db-x2.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/index/descktop/db-x1.jpg" width="270" height="260" alt="Фотопортрет женчины">
                         </picture>
                         <div class="comando__caption">
                         <h3 class="comando__caption--title">Ольга Репина</h3>
@@ -239,10 +240,10 @@
                     </li>
                     <li class="comando__card">
                         <picture>
-                            <source  srcset="./images/index/mobil/mc-x1.jpg 1x, ./images/index/mobil/mc-x2.jpg 2x" media="(max-width: 480px)">
-                            <source  srcset="./images/index/tablet/tc-x1.jpg 1x, ./images/index/tablet/tc-x2.jpg 2x" media="(max-width: 768px)">
-                            <source  srcset="./images/index/descktop/dc-x1.jpg 1x, ./images/index/descktop/dc-x2.jpg 2x" media="(max-width: 1200px)">
-                            <img src="./images/index/mobil/mc-x1.jpg" width="270" height="260" alt="Фотопортрет мужчины">
+                            <source  srcset="./images/index/mobil/mc-x1.jpg 1x, ./images/index/mobil/mc-x2.jpg 2x" media="(max-width: 767px)">
+                            <source  srcset="./images/index/tablet/tc-x1.jpg 1x, ./images/index/tablet/tc-x2.jpg 2x" media="(max-width: 1199px)">
+                            <source  srcset="./images/index/descktop/dc-x1.jpg 1x, ./images/index/descktop/dc-x2.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/index/descktop/dc-x1.jpg" width="270" height="260" alt="Фотопортрет мужчины">
                         </picture>
                         <div class="comando__caption">
                         <h3 class="comando__caption--title">Николай Тарасов</h3>
@@ -285,10 +286,10 @@
                     </li>
                     <li class="comando__card">
                         <picture>
-                            <source  srcset="./images/index/mobil/md-x1.jpg 1x, ./images/index/mobil/md-x2.jpg 2x" media="(max-width: 480px)">
-                            <source  srcset="./images/index/tablet/td-x1.jpg 1x, ./images/index/tablet/td-x2.jpg 2x" media="(max-width: 768px)">
-                            <source  srcset="./images/index/descktop/dd-x1.jpg 1x, ./images/index/descktop/dd-x2.jpg 2x" media="(max-width: 1200px)">
-                            <img src="./images/index/mobil/md-x1.jpg" width="270" height="260" alt="Фотопортрет мужчины">
+                            <source  srcset="./images/index/mobil/md-x1.jpg 1x, ./images/index/mobil/md-x2.jpg 2x" media="(max-width: 767px)">
+                            <source  srcset="./images/index/tablet/td-x1.jpg 1x, ./images/index/tablet/td-x2.jpg 2x" media="(max-width: 1199px)">
+                            <source  srcset="./images/index/descktop/dd-x1.jpg 1x, ./images/index/descktop/dd-x2.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/index/descktop/dd-x1.jpg" width="270" height="260" alt="Фотопортрет мужчины">
                         </picture>
                         <div class="comando__caption">
                         <h3 class="comando__caption--title">Михаил Ермаков</h3>
@@ -388,7 +389,7 @@
     <footer class="footer">
         <div class="footer__conteiner _conteiner">
             <div class="footer__conteiner--tablet">
-                <div class="footer__conteiner--padding">
+                <div class="footer__conteiner--mardgin">
                 <!-- это логотип сайта он ведет на начало главной страницы -->
                     <a href="./index.html" class="_logo"><span>Web</span>Studio</a>
                     <address class="footer__adress">
@@ -403,7 +404,7 @@
                         </ul>
                     </address>
                 </div>
-                <div class="footer__go-go footer__conteiner--padding ">
+                <div class="footer__go-go footer__conteiner--mardgin">
                     <p class="footer__go-go-title">Присоединяйтесь</p>
                     <ul class="footer__go-list go-list">
                         <li class="go-list__li">
@@ -441,7 +442,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer__sabmit footer__conteiner--padding ">
+            <div class="footer__sabmit">
                 <b class="footer__go-go-title">Подпишитесь на рассылку</b>
                 <form action="#" class="footer__form">
                     <input type="email" class="footer__form-email" name="email" required placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
@@ -487,13 +488,18 @@
                         <svg class="check_icon" id="castom"><use href="./images/svg/symbol-defs.svg#icon-icon-check">
                         </use></svg>
                     <input type="checkbox" name="agrey" class="check_input none" id="selected" onchange="fun1()">
-                    <label for="selected" class="check__licensia">Соглашаюсь с рассылкой и принимаю</label>
-                    <a href="">Условия договора</a>
+                    <label for="selected" class="check__licensia">Соглашаюсь с рассылкой и принимаю<a class="check__licensia--link" href="#">Условия договора</a></label>
                 </div>
                 <button type="submit" class="general__button">Отправить</button>
             </form>
         </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/checkbox.js"></script>
