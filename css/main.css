@@ -843,7 +843,8 @@ body {
   margin-left: auto;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  max-width: 480px;
+  max-width: 1600px;
+  background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/index/mobil/mheader-x1.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/index/mobil/mheader-x1.jpg);
 }
@@ -857,7 +858,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/index/tablet/theader-x1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/index/tablet/theader-x1.jpg);
   }
@@ -875,7 +875,6 @@ body {
     font-size: 44px;
     line-height: 1.4;
     height: 600px;
-    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/index/descktop/dheader-x1.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../images/index/descktop/dheader-x1.jpg);
   }

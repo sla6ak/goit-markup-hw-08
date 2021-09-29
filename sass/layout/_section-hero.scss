@@ -12,7 +12,8 @@
         margin-left: auto;
         background-repeat: no-repeat;
         background-position: 50% 50%;
-        max-width: 480px;
+        max-width: 1600px;
+        background-size: cover;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(./../images/index/mobil/mheader-x1.jpg);
         @media (min-device-pixel-ratio: 2),
@@ -23,7 +24,7 @@
                 url(./../images/index/mobil/mheader-x2.jpg);
                 }
 @media screen and (min-width: 768px) {
-        max-width: 768px;
+        // max-width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(./../images/index/tablet/theader-x1.jpg);
                 @media (min-device-pixel-ratio: 2),
@@ -38,7 +39,7 @@
         font-size: 44px;
         line-height: 1.4;
         height: 600px;
-        max-width: 1600px;
+        // max-width: 1600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(./../images/index/descktop/dheader-x1.jpg);
                 @media (min-device-pixel-ratio: 2),
