@@ -185,19 +185,17 @@
 }
 .list-adress__link{
     display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: auto;
     font-weight: 500;
     letter-spacing: 0.02em;
     color: $color-paragraph;
-    @media screen and (min-width: 1200px) {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
     @media screen and (min-width: 768px) {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+    
     &-svg1{
         width: 16px;
         height: 12px;
@@ -209,5 +207,21 @@
         height: 16px;
         fill: currentColor;
         margin-right: 10px;
+    }
+}
+.for-down{
+    padding-top: 5px;
+    padding-bottom: 21px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
+.for-top{
+    padding-top: 21px;
+    padding-bottom: 5px;
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 32px;
+        padding-top: 32px;
     }
 }

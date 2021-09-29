@@ -102,6 +102,13 @@
     .sait__link:focus &{
     transform: translateY(0);
     }
+    @media screen and (max-width: 450px) {
+        font-size: 12px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        padding-left: 13px;
+        padding-right: 13px;
+        }
 }
 
 .sait__text{

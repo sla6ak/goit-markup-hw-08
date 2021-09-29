@@ -442,18 +442,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   line-height: auto;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-@media screen and (min-width: 1200px) {
-  .list-adress__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -475,6 +471,30 @@ body {
   height: 16px;
   fill: currentColor;
   margin-right: 10px;
+}
+
+.for-down {
+  padding-top: 5px;
+  padding-bottom: 21px;
+}
+
+@media screen and (min-width: 1200px) {
+  .for-down {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.for-top {
+  padding-top: 21px;
+  padding-bottom: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .for-top {
+    padding-bottom: 32px;
+    padding-top: 32px;
+  }
 }
 
 .header__button {
@@ -1667,6 +1687,16 @@ body.scroll {
 .sait__link:focus .sait__discription {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+@media screen and (max-width: 450px) {
+  .sait__discription {
+    font-size: 12px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }
 
 .sait__text {
