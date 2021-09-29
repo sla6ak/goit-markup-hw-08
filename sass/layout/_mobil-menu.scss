@@ -2,6 +2,7 @@
     background-color: transparent;
     border: none;
 }
+
 .js-menu-container{
     // overflow-y: scroll;
     display: flex;
@@ -18,6 +19,9 @@
     transition: transform 250ms $cubik-transform;
     &.is-open{
         transform: translateX(0%);
+    }
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 }
 .js-close-menu{
@@ -92,5 +96,8 @@ margin-bottom: 20px;
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
+    color: $color-style;
+}
+.curent{
     color: $color-style;
 }
