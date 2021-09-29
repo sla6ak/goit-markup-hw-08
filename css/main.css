@@ -1269,7 +1269,7 @@ body.scroll {
 @media screen and (max-width: 479px) {
   .modal__view {
     width: 100%;
-    min-height: 100%;
+    min-height: 609px;
     padding: 20px;
   }
 }
