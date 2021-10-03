@@ -18,17 +18,21 @@
     }
 }
 .footer__conteiner--tablet{
+    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
     
 }
 .footer__conteiner--mardgin{
         margin-bottom: 60px;
-        @media screen and (min-width: 1200px){
+        @media screen and (min-width: 768px){
             margin-bottom: 0px;
         }
     }
